@@ -1,0 +1,1249 @@
+ INFO	MultiMC 5, (c) 2013 MultiMC Contributors 
+ INFO	Version                    :  "0.4.2" 
+ INFO	Git commit                 :  "a59e83cd12bc8e296493cd373968c2a4b866f9d2" 
+ INFO	Work dir before adjustment :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Work dir after adjustment  :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Adjusted by                :  "Command line C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Binary path                :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Application root path      :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Static data path           :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	New FTB setup 
+ INFO	FTB Launcher paths: "C:/Users/Mitchell/AppData/Local/ftblauncher" and "C:/Users/Mitchell/AppData/Roaming/ftblauncher" 
+ INFO	Your language is "en" 
+ INFO	Instance path              :  "instances" 
+ INFO	Loading Instances... 
+ INFO	Loading MultiMC instance from  "instances/1.7.10 Mod Pack Lan Party" 
+ INFO	Started watching  "C:/Users/Mitchell/Documents/MultiMC/icons" 
+ INFO	Building version from multilayered sources. 
+ INFO	Loading builtin version list. 
+ WARN	Blacklisted legacy version ignored:  "rd-160052" 
+ INFO	Loading local version list. 
+ INFO	Loaded version "1.8" from local version list. 
+ INFO	Loaded version "1.7.10" from local version list. 
+ INFO	Loaded version "1.6.4" from local version list. 
+ERROR	Couldn't open "instances/1.7.10 Mod Pack Lan Party/order.json"  for reading: "No such file or directory" 
+ WARN	Ignoring overriden order 
+ INFO	Reading "net.minecraftforge.json" 
+ INFO	Loaded instance  "1.7.10 Mod Pack Lan Party"  from  "C:/Users/Mitchell/Documents/MultiMC/instances/1.7.10 Mod Pack Lan Party" 
+ INFO	Loading accounts... 
+ INFO	Detecting proxy settings... 
+ INFO	Using no proxy is an option! 
+ INFO	"Status JSON"  started. 
+ INFO	Downloading  "http://status.mojang.com/check" 
+ INFO	Reloading news. 
+ INFO	"News RSS Feed"  started. 
+ INFO	Downloading  "http://multimc.org/rss.xml" 
+DEBUG	Checking for updates. 
+DEBUG	Channel list isn't loaded yet. Loading channel list and deferring update check. 
+DEBUG	Loading the channel list. 
+ INFO	"Update System Channel List"  started. 
+ INFO	Downloading  "http://files.multimc.org/update/win32/channels.json" 
+ INFO	Didn't find any legacy assets to migrate 
+ INFO	"Checking for notifications"  started. 
+ INFO	Downloading  "http://files.multimc.org/notifications.json" 
+ INFO	"Update System Channel List" progress: 1 / 1 
+ INFO	"Update System Channel List" succeeded. 
+ INFO	Successfully loaded UpdateChecker channel list. 
+DEBUG	Checking for updates. 
+ INFO	"GoUpdate Repository Index"  started. 
+ INFO	Downloading  "http://files.multimc.org/update/win32/stable/index.json" 
+ INFO	"GoUpdate Repository Index" progress: 1 / 1 
+ INFO	"GoUpdate Repository Index" succeeded. 
+DEBUG	Finished downloading repo index. Checking for new versions. 
+DEBUG	Processing repository version list. 
+DEBUG	Found newer version with ID 30 
+ INFO	"Changelog"  started. 
+ INFO	Downloading  "https://raw.githubusercontent.com/MultiMC/MultiMC5/stable/changelog.md" 
+ INFO	"News RSS Feed" progress: 1 / 1 
+ INFO	"News RSS Feed" succeeded. 
+DEBUG	Finished loading RSS feed. 
+DEBUG	Loaded news entry "Version 0.4 out - Jar mods, UI changes, and more!" 
+DEBUG	Loaded news entry "Introducing QuickMods - A better way to install mods" 
+DEBUG	Loaded news entry "Support us on Patreon!" 
+DEBUG	Loaded news entry "Heartbleed Vulnerability Update (fixed!)" 
+DEBUG	Loaded news entry "Announcing MultiMC 6" 
+DEBUG	Loaded news entry "MultiMC 5 - 0.3 update" 
+DEBUG	Loaded news entry "First official MultiMC 5 release!" 
+DEBUG	Loaded news entry "MultiMC Status Update" 
+DEBUG	News loading succeeded. 
+ INFO	"Status JSON" progress: 1 / 1 
+ INFO	"Status JSON" succeeded. 
+DEBUG	Finished loading status JSON. 
+DEBUG	Status loading succeeded. 
+ INFO	"Changelog" progress: 1 / 1 
+ INFO	"Changelog" succeeded. 
+DEBUG	"<html><h1>MultiMC Changelog</h1>
+<h2>0.4.4</h2>
+<ul>
+<li>Other logs larger than 10MB will not load to prevent logs eating the whole available memory</li>
+<li>Translations are now updated independently from MultiMC</li>
+<li>Added new and reworked the old simple icon themes</li>
+<li>LWJGL on OSX should no longer clash with Java 8</li>
+<li>Update to newer Qt version</li>
+<ul>
+<li>Look and feel updated for latest OSX</li>
+</ul>
+<li>Fixed issues caused by Minecraft inheriting the environment variables from MultiMC</li>
+<li>Minecraft log improvements:</li>
+<ul>
+<li>Implemented search and pause</li>
+<li>Automated coloring is updated for log format used by Minecraft 1.7+</li>
+<li>Added settings for the font used in the console, using sensible defaults for the OS</li>
+</ul>
+<li>Removed MultiMC crash handler, it will be replaced by a better one in the future</li>
+</ul>
+<h2>0.4.3</h2>
+<ul>
+<li>Fix for issues with Minecraft version file updates</li>
+<li>Fix for console window related memory leak</li>
+<li>Fix for travis.ci build</li>
+</ul>
+<h2>0.4.2</h2>
+<ul>
+<li>Show a warning in the log if a library is missing</li>
+<li>Fixes for relocating instances to other MultiMC installs:</li>
+<ul>
+<li>Libraries now use full Gradle dependency specifiers</li>
+<li>Rework of forge installer (forge can reinstall itself using only the information already in the instance)</li>
+<li>Fixed bugs in rarely used library insertion rules</li>
+</ul>
+<li>Make the global settings dialog into a page dialog</li>
+<li>Check if the Java binary can be found before launch</li>
+<li>Show a warning for paths containing a '!' (Java can't handle that properly)</li>
+<li>Many smaller fixes</li>
+</ul>
+<h2>0.4.1</h2>
+<ul>
+<li>Fix LWJGL version list (SourceForge has changed the download API)</li>
+</ul>
+<h2>0.4.0</h2>
+<ul>
+<li>Jar support in 1.6+</li>
+<li>Deprecated legacy instances</li>
+<ul>
+<li>Legacy instances can still be used but not created</li>
+<li>All Minecraft versions are supported in the new instance format</li>
+</ul>
+<li>All instance editing and settings dialogs were turned into pages</li>
+<ul>
+<li>The edit instance dialog contains pages relevant to editing and settings</li>
+<li>The console window contains pages useful when playing the game</li>
+</ul>
+<li>Redone the screenshot management and upload (page)</li>
+<li>Added a way to display and manage log files and crash reports generated by Minecraft (page)</li>
+<li>Added measures to prevent corruption of version files</li>
+<ul>
+<li>Minecraft version files are no longer part of the instances by default</li>
+</ul>
+<li>Added help for the newly added dialog pages</li>
+<li>Made logs uploaded to paste.ee expire after a month</li>
+<li>Fixed a few bugs related to liteloader and forge (1.7.10 issues)</li>
+<li>Icon themes. Two new themes where added (work in progress)</li>
+<li>Changelog and update channel are now visible in the update dialog</li>
+<li>Several performance improvements to the group view</li>
+<li>Added keyboard navigation to the group view</li>
+</ul>
+<h2>0.3.9</h2>
+<ul>
+<li>Workaround for 1.7.10 Forge</li>
+</ul>
+<h2>0.3.8</h2>
+<ul>
+<li>Workaround for performance issues with Intel integrated graphics chips</li>
+</ul>
+<h2>0.3.7</h2>
+<ul>
+<li>Fixed forge for 1.7.10-pre4 (and any future prereleases)</li>
+</ul>
+<h2>0.3.6</h2>
+<ul>
+<li>New server status - now with more color</li>
+<li>Fix for FTB tracking issues</li>
+<li>Fix for translations on OSX not working</li>
+<li>Screenshot dialog should be harder to lose track of when used from the console window</li>
+<li>A crash handler implementation has been added.</li>
+</ul>
+<h2>0.3.5</h2>
+<ul>
+<li>More versions are now selectable when changing instance versions</li>
+<li>Fix for Forge/FML changing its mcmod.info metadata format</li>
+</ul>
+<h2>0.3.4</h2>
+<ul>
+<li>Show a list of Patreon patrons in credits section of the about dialog</li>
+<li>Make the console window raise itself after minecraft closes</li>
+<li>Add Control/Command+q shortcut to quit from the main window</li>
+<li>Add french translation</li>
+<li>Download and cache FML libs for legacy versions</li>
+<li>Update the OS X icon</li>
+<li>Fix FTB libraries not being used properly</li>
+</ul>
+<h2>0.3.3</h2>
+<ul>
+<li>Tweak context menu to prevent accidental clicks</li>
+<li>Fix adding icons to custom icon directories</li>
+<li>Added a Patreon button to the toolbar</li>
+<li>Minecraft authentication tasks now provide better error reports</li>
+</ul>
+<h2>0.3.2</h2>
+<ul>
+<li>Fix issues with libraries not getting replaced properly (fixes instance startup for new instances)</li>
+<li>Fix april fools</li>
+</ul>
+<h2>0.3.1</h2>
+<ul>
+<li>Fix copying of FTB instances (instance type is changed properly now)</li>
+<li>Customizing FTB pack versions will remove the FTB pack patch file</li>
+</ul>
+<h2>0.3</h2>
+<ul>
+<li>Improved instance view</li>
+<li>Overhauled 1.6+ version loading</li>
+<li>Added a patch system for instance modification</li>
+<ul>
+<li>There is no longer a single custom.json file that overrides version.json</li>
+<li>Instead there are now "patch" files in <instance>/patches/, one for each main tweaker (forge, liteloader etc.)</li>
+<li>These patches are applied after version.json in a customisable order,</li>
+<li>A list of these files is shown in the left most tab in the Edit Mods dialog, where a list of libraries was shown before.</li>
+<li>custom.json can still be used for overriding everything.</li>
+</ul>
+<li>Offline mode can be used even when online</li>
+<li>Show an "empty" message in version selector dialogs</li>
+<li>Fix FTB paths on windows</li>
+<li>Tooling support</li>
+<ul>
+<li>JProfiler</li>
+<li>JVisualVM</li>
+<li>MCEdit</li>
+</ul>
+<li>Don't assume forge in FTB instances and allow other libraries (liteloader, mcpatcher, etc.) in FTB instances</li>
+<li>Screenshot uploading/managing</li>
+<li>Instance badges</li>
+<li>Some pre/post command stuff (remove the timeout, variable substitution)</li>
+<li>Fix logging when the system language is not en_US</li>
+<li>Setting PermGen to 64 will now omit the java parameter because it is the default</li>
+<li>Fix encoding of escape sequences (tabs and newlines) in config files</li>
+</ul>
+<h2>0.2.1</h2>
+<ul>
+<li>Hotfix - move the native library extraction into the onesix launcher part.</li>
+</ul>
+<h2>0.2</h2>
+<ul>
+<li>Java memory settings have MB added to the number to make the units obvious.</li>
+<li>Complete rework of the launcher part. No more sensitive information in the process arguments.</li>
+<li>Cached downloads now do not destroy files on failure.</li>
+<li>Mojang service status is now on the MultiMC status bar.</li>
+<li>Java checker is no longer needed/used on instance launch.</li>
+<li>Support for private FTB packs.</li>
+<li>Fixed instance ID issues related to copying FTB packs without changing the instance name.</li>
+<li>Forge versions are better sorted (build numbers above 999 were sorted wrong).</li>
+<li>Fixed crash related to the MultiMC update channel picker in offline mode.</li>
+<li>Started using icon themes for the application icons, fixing many OSX graphical glitches.</li>
+<li>Icon sources have been located, along with icon licenses.</li>
+<li>Update to the German translation.</li>
+</ul>
+<h2>0.1.1</h2>
+<ul>
+<li>Hotfix - Changed the issue tracker URL to <a href="https://github.com/MultiMC/MultiMC5/issues">GitHub issues</a>.</li>
+</ul>
+<h2>0.1</h2>
+<ul>
+<li>Reworked the version numbering system to support our <a href="http://nvie.com/posts/a-successful-git-branching-model/">new Git workflow</a>.</li>
+<li>Added a tray icon for the console window.</li>
+<li>Fixed instances getting deselected after FTB instances are loaded (or whenever the model is reset).</li>
+<li>Implemented proxy settings.</li>
+<li>Fixed sorting of Java installations in the Java list.</li>
+<li>Jar files are now distributed separately, rather than being extracted from the binary at runtime.</li>
+<li>Added additional information to the about dialog.</li>
+</ul>
+<h2>0.0</h2>
+<ul>
+<li>Initial release.</li>
+</ul>
+</html>
+" 
+ INFO	Loading remote version list. 
+ INFO	Loaded version "1.8.1-pre5" from remote version list. 
+ INFO	Loaded version "1.8.1-pre4" from remote version list. 
+ INFO	Loaded version "1.8.1-pre3" from remote version list. 
+ INFO	Loaded version "1.8.1-pre2" from remote version list. 
+ INFO	Loaded version "1.8.1-pre1" from remote version list. 
+ INFO	Loaded version "1.8" from remote version list. 
+ INFO	Loaded version "14w34d" from remote version list. 
+ INFO	Loaded version "14w33c" from remote version list. 
+ INFO	Loaded version "14w32d" from remote version list. 
+ INFO	Loaded version "14w31a" from remote version list. 
+ INFO	Loaded version "14w30c" from remote version list. 
+ INFO	Loaded version "14w29b" from remote version list. 
+ INFO	Loaded version "14w28b" from remote version list. 
+ INFO	Loaded version "14w27b" from remote version list. 
+ INFO	Loaded version "14w26c" from remote version list. 
+ INFO	Loaded version "1.7.10" from remote version list. 
+ INFO	Loaded version "14w25b" from remote version list. 
+ INFO	Loaded version "1.7.10-pre4" from remote version list. 
+ INFO	Loaded version "1.7.10-pre3" from remote version list. 
+ INFO	Loaded version "1.7.10-pre2" from remote version list. 
+ INFO	Loaded version "1.7.10-pre1" from remote version list. 
+ INFO	Loaded version "14w21b" from remote version list. 
+ INFO	Loaded version "14w20b" from remote version list. 
+ INFO	Loaded version "14w19a" from remote version list. 
+ INFO	Loaded version "14w18b" from remote version list. 
+ INFO	Loaded version "14w17a" from remote version list. 
+ INFO	Loaded version "14w11b" from remote version list. 
+ INFO	Loaded version "1.7.9" from remote version list. 
+ INFO	Loaded version "14w10c" from remote version list. 
+ INFO	Loaded version "14w08a" from remote version list. 
+ INFO	Loaded version "1.7.5" from remote version list. 
+ INFO	Loaded version "14w07a" from remote version list. 
+ INFO	Loaded version "14w06b" from remote version list. 
+ INFO	Loaded version "14w05b" from remote version list. 
+ INFO	Loaded version "14w04b" from remote version list. 
+ INFO	Loaded version "14w03b" from remote version list. 
+ INFO	Loaded version "14w02c" from remote version list. 
+ INFO	Loaded version "1.7.4" from remote version list. 
+ INFO	Loaded version "1.7.3" from remote version list. 
+ INFO	Loaded version "1.7.2" from remote version list. 
+ INFO	Loaded version "1.7.1" from remote version list. 
+ INFO	Loaded version "1.7" from remote version list. 
+ INFO	Loaded version "1.6.4" from remote version list. 
+ INFO	Loaded version "1.6.2" from remote version list. 
+ INFO	Loaded version "1.6.1" from remote version list. 
+ INFO	Loaded version "1.6" from remote version list. 
+ WARN	Blacklisted legacy version ignored:  "rd-160052" 
+ INFO	Task succeeded 
+ INFO	Update will be installed later. 
+DEBUG	Selected index 0 channel id "stable" 
+ INFO	Discovered LWGL version "2.9.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip/download" 
+ INFO	Discovered LWGL version "2.9.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.0/lwjgl-2.9.0.zip/download" 
+ INFO	Discovered LWGL version "2.8.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.5/lwjgl-2.8.5.zip/download" 
+ INFO	Discovered LWGL version "2.8.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.4/lwjgl-2.8.4.zip/download" 
+ INFO	Discovered LWGL version "2.8.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.3/lwjgl-2.8.3.zip/download" 
+ INFO	Discovered LWGL version "2.8.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.2/lwjgl-2.8.2.zip/download" 
+ INFO	Discovered LWGL version "2.8.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.1/lwjgl-2.8.1.zip/download" 
+ INFO	Discovered LWGL version "2.8.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.0/lwjgl-2.8.0.zip/download" 
+ INFO	Discovered LWGL version "2.7.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7.1/lwjgl-2.7.1.zip/download" 
+ INFO	Discovered LWGL version "2.7" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7/lwjgl-2.7.zip/download" 
+ INFO	Discovered LWGL version "2.6" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.6/lwjgl-2.6.zip/download" 
+ INFO	Discovered LWGL version "2.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.5/lwjgl-2.5.zip/download" 
+ INFO	Discovered LWGL version "2.4.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.2/lwjgl-2.4.2.zip/download" 
+ INFO	Discovered LWGL version "2.4.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.1/lwjgl-2.4.1.zip/download" 
+ INFO	Discovered LWGL version "2.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4/lwjgl-2.4.zip/download" 
+ INFO	Discovered LWGL version "2.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.3/lwjgl-2.3.zip/download" 
+ INFO	Discovered LWGL version "2.2.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.2/lwjgl-2.2.2.zip/download" 
+ INFO	Discovered LWGL version "2.2.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.1/lwjgl-2.2.1.zip/download" 
+ INFO	Discovered LWGL version "2.2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.0/lwjgl-2.2.0.zip/download" 
+ INFO	Discovered LWGL version "2.1.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.1.0/lwjgl-2.1.0.zip/download" 
+ INFO	Discovered LWGL version "2.0.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0.1/lwjgl-2.0.1.zip/download" 
+ INFO	Discovered LWGL version "2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0/lwjgl-2.0.zip/download" 
+ INFO	Loaded LWJGL list. 
+DEBUG	The request failed, but the server gave us an error message. Processing error. 
+ERROR	Task failed:  "Invalid credentials. Invalid username or password." 
+DEBUG	The request failed, but the server gave us an error message. Processing error. 
+ERROR	Task failed:  "Invalid credentials. Invalid username or password." 
+DEBUG	Processing authentication response. 
+DEBUG	Getting client token. 
+DEBUG	Getting access token. 
+DEBUG	Loading profile list. 
+DEBUG	Setting current profile. 
+DEBUG	Finished reading authentication response. 
+ INFO	Task succeeded 
+ INFO	Writing account list to "accounts.json" 
+DEBUG	Building JSON data structure. 
+DEBUG	Building account array. 
+DEBUG	Writing account list to file. 
+ INFO	Saved account list to "accounts.json" 
+ INFO	Writing account list to "accounts.json" 
+DEBUG	Building JSON data structure. 
+DEBUG	Building account array. 
+DEBUG	Writing account list to file. 
+ INFO	Saved account list to "accounts.json" 
+ INFO	"Player skins: mitchell.h96@gmail.com"  started. 
+ INFO	Downloading  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" 
+ERROR	Failed  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png"  with reason  203 
+ERROR	Part 0 failed, restarting (  QUrl( "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" )  ) 
+ INFO	Downloading  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" 
+ERROR	Failed  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png"  with reason  203 
+ERROR	Part 0 failed, restarting (  QUrl( "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" )  ) 
+ INFO	Downloading  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" 
+ERROR	Failed  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png"  with reason  203 
+ERROR	Part 0 failed, restarting (  QUrl( "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" )  ) 
+ INFO	Downloading  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" 
+ERROR	Failed  "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png"  with reason  203 
+ERROR	Part 0 failed 3 times (  QUrl( "http://skins.minecraft.net/MinecraftSkins/Skipper_1024.png" )  ) 
+ERROR	"Player skins: mitchell.h96@gmail.com" failed. 
+ INFO	Loading MultiMC instance from  "instances/1.7.10 Mod Pack Lan Party" 
+ INFO	Building version from multilayered sources. 
+ERROR	Couldn't open "instances/1.7.10 Mod Pack Lan Party/order.json"  for reading: "No such file or directory" 
+ WARN	Ignoring overriden order 
+ INFO	Reading "net.minecraftforge.json" 
+ INFO	Loaded instance  "1.7.10 Mod Pack Lan Party"  from  "C:/Users/Mitchell/Documents/MultiMC/instances/1.7.10 Mod Pack Lan Party" 
+DEBUG	Processing authentication response. 
+DEBUG	Getting new access token. 
+DEBUG	Finished reading refresh response. 
+ INFO	Task succeeded 
+ INFO	Writing account list to "accounts.json" 
+DEBUG	Building JSON data structure. 
+DEBUG	Building account array. 
+DEBUG	Writing account list to file. 
+ INFO	Saved account list to "accounts.json" 
+ INFO	"Version index"  started. 
+ INFO	Downloading  "http://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/1.7.10.json" 
+ INFO	"Version index" progress: 1 / 1 
+ INFO	"Version index" succeeded. 
+ INFO	"qbjs   ,          fileId net.minecraft    id 1.7.10	  	 mainClass  net.minecraft.client.main.Main   minecraftArguments--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --userProperties ${user_properties} --userType ${user_type}  ?2   type   release   ?5   assets 1.7.109   releaseTime    2014-05-14T19:29:23+02:00 >   time   2014-05-14T19:29:23+02:00 ?   minimumLauncherVersionG  	 libraries ?	  4   d	  8      4      name   com.mojang:realms:1.3.5      H      D      name  ) org.apache.commons:commons-compress:1.8.1    H      D      name  * org.apache.httpcomponents:httpclient:4.3.3   D      @      name  % commons-logging:commons-logging:1.1.3    H      D      name  ( org.apache.httpcomponents:httpcore:4.3.2     4      0      name   java3d:vecmath:1.3.1     <      8      name   net.sf.trove4j:trove4j:3.0.3     @      <      name  " com.ibm.icu:icu4j-core-mojang:51.2   @      <      name  " net.sf.jopt-simple:jopt-simple:4.5   @      <      name  " com.paulscode:codecjorbis:20101023   @      <      name   com.paulscode:codecwav:20101023      H      D      name  ' com.paulscode:libraryjavasound:20101123      H      D      name  ) com.paulscode:librarylwjglopenal:20100824    @      <      name  " com.paulscode:soundsystem:20120107   @      <      name   io.netty:netty-all:4.0.10.Final      <      8      name   com.google.guava:guava:15.0      D      @      name  $ org.apache.commons:commons-lang3:3.1     8      4      name   commons-io:commons-io:2.4    @      <      name   commons-codec:commons-codec:1.9      @      <      name   com.google.code.gson:gson:2.2.4      8      4      name   com.mojang:authlib:1.5.16    L      H      name  , org.apache.logging.log4j:log4j-api:2.0-beta9     L      H      name  - org.apache.logging.log4j:log4j-core:2.0-beta9    4      0      name   tv.twitch:twitch:5.16    ?  	   ?     name   tv.twitch:twitch-platform:5.16	   natives   |      p   ?   windows    natives-windows-${arch}   ?   linux  natives-linux    osx    natives-osx   8   T      ?   extract   <      8   ?   exclude            	 META-INF/ ?     ?#   rules ?      ?   $             action allow    p      h      action disallow  ?   os<      4      name   linux    version                 $   ?    ?      8     t  	   d     name  & tv.twitch:twitch-external-platform:4.5
+   natives   <      8   ?   windows    natives-windows-${arch}      ?   extract   <      8   ?   exclude            	 META-INF/ ?     ?   rules ?      |   p      h      action allow    os@      8      name   windows   ?   version          $          ?  ?      @   ?   ?  ?  ?  ?  #  ,  ?2  :  B  J  R  Z  c  l  t  |  ??  ?  ?  ?  ?  ?  ??  ?  ??  ?  ?     (   (  8   h     ?  ?  ?  " 
+ INFO	Task succeeded 
+ INFO	"1.7.10 Mod Pack Lan Party" : downloading libraries 
+ INFO	Building version from multilayered sources. 
+ERROR	Couldn't open "instances/1.7.10 Mod Pack Lan Party/order.json"  for reading: "No such file or directory" 
+ WARN	Ignoring overriden order 
+ INFO	Reading "net.minecraftforge.json" 
+ INFO	"Libraries for instance 1.7.10 Mod Pack Lan Party"  started. 
+ INFO	"Libraries for instance 1.7.10 Mod Pack Lan Party" progress: 1 / 1 
+ INFO	"Libraries for instance 1.7.10 Mod Pack Lan Party" succeeded. 
+ INFO	"Asset index for 1.7.10 Mod Pack Lan Party"  started. 
+ INFO	Downloading  "http://s3.amazonaws.com/Minecraft.Download/indexes/1.7.10.json" 
+ INFO	"Asset index for 1.7.10 Mod Pack Lan Party" progress: 1 / 1 
+ INFO	"Asset index for 1.7.10 Mod Pack Lan Party" succeeded. 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party"  started. 
+ INFO	Downloading  "http://resources.download.minecraft.net/bd/bdf48ef6b5d0d23bbb02e17d04865216179f510a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/92/92750c5f93c312ba9ab413d546f32190c56d6f1f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/99/991b421dfd401f115241601b2b373140a8d78572"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bd/bdf48ef6b5d0d23bbb02e17d04865216179f510a"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/92/92750c5f93c312ba9ab413d546f32190c56d6f1f"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/99/991b421dfd401f115241601b2b373140a8d78572"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/91/913dac82b2c852eb1b6f371fe14456901386cd13"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2e/2e51504c234ea51b194ddf26871d20ed457483ec"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fc/fc2139572f55c973aedc694b8d633f2a4eb0907a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7d/7dbc8bd8dc11c8011b38a682f8a127340634f02c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1f/1f8e5f3b70b781bbf6c2ebca61f6647f06b67603"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/33/3386789f844a747d348a42386ee941daffdf34d4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/22bb966ab55ae53b7d5960e13f7bc11920f380a3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/99/999257ac419cf90ec067b750bfc074e57015aa75"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a2/a2fbcec6e56101db42bdcbbf93461917e3ff9a9b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a5/a5b9750a30629916c454b879246231ebd1cc9a2c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/17/17567e7dc53a5e939b5bd0197fbf95d93c002c2a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4b/4b0fb97083de71e8b23e144c7cd426fb3eb09e49"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/71/7197269073c558f5ae376f40eeae0ad29b05c5f5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/81/81187dd7f36516de3a88d19c2f3903f74df1def0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0e/0ee5c0e080e6f34e291a604e2485aa2c710cc81f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c4/c4daa64350971a7714218efc517de25e2a79ccc2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e5/e55edae0011215873faeba154c7d89f590ddb748"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/42/428263c79973ad44876048f421511aed401cf2e6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/33/33747279d2752138df2d80cc70771e042457017f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e5de18b13004b53cf8e5d46f36ab07b165e7362"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a2/a224f70ea345fdb44f89a7c1b7c200b4239e6577"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6c/6c7a6c4bae01c22e67bed10b69d46e67d5d67895"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/34/34090e3d3a908122ff2734784575b5a35c51d911"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/20/20369b200cab4b4fb4975d8468395eafb62c50a1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ff/ff77255b582c0bac2fb722d74b168d51345ab730"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d8/d8fc393426b1c67fcc0a867233874670b5755687"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b9/b968a786fb5ddd46e28e4bf5c9ecb9c6db13bb95"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ea/ea1403be012b32d2239796a3617de19b6774fe06"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0e/0e2933d361b38fc2aff7e7d09c6b723893e4dd5c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/32/323d7f116b2187c51ff76ae7dd1ac15c5d4d007d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/00/00c71b8f15ddfaf958c0c31da003031b8789b3a6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f9/f92ff2e7e9baf2de036c780dab96dc0d018fd3f3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/08/081d21bad358ef6922c43cecf5e0b8f30aa52e6c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/51/51ffb69a87c411dcde1f3f93f9b799458e66ee81"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6a/6ae665534a98ef5a051792a98ade7bf555407d7a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fd/fd0b95f772a7714597740f625cfd5cc29c9d3560"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/10/10c8a862c62bac263807bf39ae191d39f8e54e35"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b8/b89e2223e2c867ed3077bbe4f233a84c63729c30"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e257258766f1430cd6e5a97def8ecac0207ae83b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c4/c4e61eec725b91b5aa638b4e9155caecef57e56b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/34/34b4b3f6f4ea91b7d631395f00ce43219d025000"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f7/f797f0bb31e043750ccaa7be27f60acd04b5c05f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/be/bef3b6a408db019403d8d756d0cf85b2c8ab61d9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5d/5dbf29b5f54015d771873e9bb02665c1128a56ff"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1a/1a498de545784868b5cb34705b4663c16292f837"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78f839189133203e8d22d93ef8c9f4d02cda3023"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8b/8b39739932fda786e72567c68ac28ff7efe99e80"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f1/f149ea34fdfe2ffdbde2f7faa11eb2aa282fa6e2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/33/33aea58cbd8d0a8ad7b1b88432de02709342e333"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/68/68a7eab92d03a6b1e432b8783b415271f31771a7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0c/0c423a8686c43541591a8283ce711f476d0d4074"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d1/d17c0896a1ecd39c49cf9870d29597bac3a42217"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/63/63fd5d8c33370939afe79299bb3891fe17acb444"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/47/47aee6e1766ea8127c5b17a9c0416583a836244f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cf/cfe9155cc562c3e805903ea67c32a62ac1bfe372"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6d/6da5429aafecf40a160496adb1b3f4537a3a9c67"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4eedcb87b68eb6c17cc6ad8bb32b381341da08ee"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/88/88077f1e3a47d62cc77fd6e81f04ff3d55644ae1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/08/08c19cb92fc7bb6c2445dd9743364960dcf9987b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6e/6e3c6a4b10e1446b7b7ce5d7342361fcf9b8da0d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/17/17d6e34837dfa86757bed29c47820914745639d5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/97/977391fc150aed15bee60af375359f495a7f2521"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/49/49f8946e2a41e2290bd1a73654550b1413b98fb6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/5513fc89fd788c31ecea7d9a3e8a3ec165f0cb4d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c2/c246c98daf08c0652972b7143fc3126ff9117703"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7f/7fafdc20468e5104493072c6708b3f8f9326c3fb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cc/cc38d596bbd7a6f37e3edd0a533adc32d4f89215"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2c/2c38cb9ef9216a83da46136fde1128c43562aa89"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/02/02ca127554fb1294b473bac256469a0d908ecd86"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d6/d6fab429585e927cc6ad7bc4363fe27580ea1a97"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a1/a15b70c81e47f1c9dc8623e838dacddf001fa3c4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/eb/eb206c38395f02f84e1062af3fab9e05cb15611f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d2/d2f3c9c340a5cfe30fb7e333c81a4d853d9bbddd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fc/fce0bb3e14ade7b292a7c1d5fa785533d8106d82"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/29/29d4dccf3353334c7aa2a49cb6fed3780a51a1ba"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/79/79a5b53bf22cca182ddff2a670942c49867663ec"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e3/e367d1dfa1ce07374e0aeaecbfb1526142a0dcc1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a7/a720e85e35be0dc3186d01cc599121b87e7ee9f7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/63/63bbe3921abd75b9f6cd1e20330360d164da169b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/5680749048457f5772ec95a73d856ad792fa1717"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d4/d4b06ccb8e331ece734f51d84a0a5fbc7164d8be"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/48/48540d7788ce3d9e780cb448ce5676c53dbcfd23"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/18/18a992d93128bb2e2861930cff3140c6940c0127"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cf/cf23204a9cca2ac7f9674168cc063cfb4dbe001f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c8/c8dd60f7e7087da52a431c1dbc0f397317b374fb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/90/9024de3f1dd4bc1e8f445c7c5b812f25c7e31bf6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b4/b463fa47816fe9a5dfe508093150e647403e4db6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d6/d68bae1949299ccd8297aaa423dd12e041e83773"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ba/ba58e1b6c8cc814a210db268d3e59a06b7ac62be"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4c/4cdd8fc380e85409fd94b93abdcad077d75ec58f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/08/08e555782cb2785b24e08a417a5e58aa08bd0695"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/67/671ef0ae7b59014a2f637d7af6d781324ab6309f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a2/a20cbf2ddce541eaed520d7ec55665fe97428be6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9ead5c928f9122e3c2f5fc4f6ce7fb4054a2b578"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1d/1d183c36f596e85c4fb564ff2667332211e49659"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/09/09236e1a725cec0229b8c564f5b3e4fe05cd7a5f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/87/8760ebb9d4b1fe9457ef272324ecd6b4329a593e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/14/144867e8792415e2873293f06ecce85cd32bb4e8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c73dcedde5031fcf242b08b3405f63098cd70641"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5f/5fd568d724ba7d53911b6cccf5636f859d2662e8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/56c1d0ac0de2265018b2c41cb571cc6631101484"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9c/9c63f2a3681832dc32d206f6830360bfe94b5bfc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/55da1856e77cfd31a7e8c3d358e1f856c5583198"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/41/41cbf5dd08e951ad65883854e74d2e034929f572"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/86/86cb1bb0c45625b18e00a64098cd425a38f6d3f2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f7/f7d7e5c7089c9b45fa5d1b31542eb455fad995db"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c7b1005d4926f6a2e2387a41ab1fb48a72f18e98"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e8/e8b89f316f3e9989a87f6e6ff12db9abe0f8b09f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c3/c3b3797d04cb9640e1d3a72d5e96edb410388fa3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/48/48f7e1bb098abd36b9760cca27b9d4391a23de26"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7b/7bf3553a4fe41a0078f4988a13d6e1ed8663ef4c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9e59c3650c6c3fc0a475f1b753b2fcfef430bf81"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0f/0fa4234797f336ada4e3735e013e44d1099afe57"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c75589cc0087069f387de127dd1499580498738e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/37/37afa06f97d58767a1cd1382386db878be1532dd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9bab7d3d15541f0aaa93fad31ad37fd07e03a6c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/58/5887d10234c4f244ec5468080412f3e6ef9522f3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a4bc069321a96236fde04a3820664cc23b2ea619"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e26fa3036cdab4c2264ceb19e1cd197a2a510227"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e094ed8dfa98656d8fec52a7d20c5ee6098b6ad"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9c/9c92f697142ae320584bf64c0d54381d59703528"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8f/8f23c02475d388b23e5faa680eafe6b991d7a9d4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/36/363545a76277e5e47538b2dd3a0d6aa4f7a87d34"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9b/9bc2a84d0aa98113fc52609976fae8fc88ea6333"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/98/98102533e6085617a2962157b4f3658f59aea018"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/45/45b2aef7b5049e81b39b58f8d631563fadcc778b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dc/dc66978374a46ab2b87db6472804185824868095"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8b/8b260108a73470c16cd244325242d4780cfb7d78"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a0/a0d1fbff7e938e92c10c1576339dda668f40e111"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d9/d9d7511e8944da0c7ab4ed2d3e3d964f98dd6997"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cd/cd9062e9e81f7cd35164a99669e5db32891a5cb5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ef/ef59205829f09ac4855c614a0e7046db820df18b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bf/bfb0e14bf130de4ecda75d8e793260e8bbaca35b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b1/b1715242916d56140486c612056ea4d6dd5a4404"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/41/41b9c631e9c1c40800b3b02a0ac5855d6ad4846d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c8/c8053e3b083b08840276de9a728202551302f416"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/92/9272aef9f27dfcc10b6e3879b7a2a67f8faa1a83"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/19/19a5aae31c3e0018a960b709a9f0240d8d47dda7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4c/4c14c40542e249c902d0cac710ab4c6d6debba28"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/85/857abbbfb58186c2f1b5510a4072630950e518f6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6e/6ea4e448fbc2a079acb0cf3564273083dadae165"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/82/827d71834e69954e0a7fd7748998332e0b619d29"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b5/b5f9075a8bf6977e7dfd3d316a673eaaa5834a99"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6a/6a908e7c7d61e01bc4223b4991820bfc56f84c5e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/34/3483650440deb3934255e044ddabff5b01a65356"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/28/28f9973fcd8366ac9837dbe190b129a8fce15857"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6a/6a83b514027c328b74f8428448dc6589d4b16388"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6d/6df3b2c2b951863fc5200edf3ff3396b105ed897"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fd/fddba78b2426f8056be081c98fe82e8411a0a5cf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/57/573e565b7fda2c34fc972edd21a82fd2e09200f8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/15/1599551814c141acd0c4a3c4a0ff83f4c4e3026d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0b/0ba4a7830ea8852bf7844872d7e2d2a408fb77e4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c3/c3c175d70372d8448c070d0716a8d88beec8b8b7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9d023a54a6b514af496c8f253f5f3fa948fd4b6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e6/e641dd3d6607db86b7574fe82781a34ad74f6c77"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a3/a323a968296882e15c743ccdc8cb8057557ae712"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e260582909112ec3c255d1ec0375c7913df5f9f8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ee/ee6079d3826ac2994f3f58e62370f3c8ff9328e9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e398c518ae706ad4d90afd6914f748faf18a7b5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c74368d2b978f570b4e7ce9645fd84b07f8f145c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/24/24d643885f9b83d8f034f49e2c5e00e70d4f175a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78d544a240d627005aaef6033fd646eafc66fe7a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/17/17491c8dd9511e9d848c92b4b7ae047aed164072"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cb/cb1cf4b405d930ad27f09ea39d6a64f35fc13308"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/00/00b38fae5d28d99514a3e73a913af16359b12b7a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/97/97e09d51c82b78ab82fb3a4dbbb8cd701b2d0aeb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3f/3f447f3e331b59ad014d9bd4a6536f98cf3a08c3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9d/9d2202fce7908dcc5b5c8758c5cd517d863d4dd3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/06/063bf0fce35c547eb59f086dbb56c5fe329cbcf4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c7e424eb00712614a183adf5d17b949175ff00df"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/28/28409652d939d2489d8b5317d51abb873821f0f4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ce/ce499da6ec5dd226d50843890ca09f16018aff9a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3d/3d98b4b7c37a09101da00d8a3078e0acba6558f4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5f/5fdf1bd80b204245af760042d2e546d87666e288"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/98/9853be18df1a5b2642e33ba05e71bfd5099f9f04"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/38/381f9e97a8a986ecab3e86431d6be6df5ff79c31"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4b/4bf7c7a08c1217de7b1f0faf82429665fbf18458"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/31/315512d6027033c2a279841badb40a26d74efc81"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/84/847ec719ee91e28d7bf58ab39a5d8d6bd5728314"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ee/eed7a9305f5879448bb94355f25279b4aac403b6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d0/d00791807e913e57d58fd891cb4dd10186cfdf38"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/08/08573a1f11058b09c5855122dff47ceb209f771e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/31/31b52151bf2a6fa35d2d2aa72f832285d9e7d70d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/18/18752157f5d8718e2752805a657c74a73d2b88db"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ab/ab5a32b70ef1e7aafc550b20afdb7dc8c0d5d901"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/74/74e5422bd83bb2041a6f0d09644bc095c0e9e21a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/36/3660e743db2bbbcff0866d3f1e606882f1aeb6ac"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/49/49874e07369c3bb0bc8a2fba4f2096d2e9a36c9a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e0/e0f0ba416a5744036e11bb6a5fc5ac4b8c461873"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bf/bf7fadaf64945f6b31c803d086ac6a652aabef9b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/98/989c3b614f736aa77bb2800821ea56936e98ca68"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/75/758d2a1c36abc84d2744d697b76d5414ea96d9f3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2a/2a031f10c7dc24e75d5dc3a374ebe7f36fc3e143"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e0/e07a2da49011ef4cf9d6b1c80a91a06f808c1243"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/228bab6d9b09994dc407b9d022bebca791d81c16"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/05/05f429069e65d78f7e6609d070a3f294cc3128ab"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/80/80ce8d4b8d361b69e42d8d147e42a09d3c85a115"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fe/fec7c7997f8eb6faaebd37f0eaed417118d3a498"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/555d33de143e6dcef2aa80ebf9a8f8b1481d42d0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/48/482919bc631b317422ab44af3938259bea73fe83"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/03/03063be15a77cc3f6815ec98090e351178190b33"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fb/fbc1b2c89c5c781e30d702b2885be3f485105869"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/74/74771428c2aa2acbd30638c6706867053bad64d3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c4/c46c7d2a84749bfcbcf576aea0d66fd3deccba31"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/09/0979bf115d081d70a985f1cfcab1b9274d6be74e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/85/85c860ea8c55984bf6cabb75354c78f3a603f98d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/53/53cc1890ebea833d3964c7dd1c90676650e34404"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/04/049a3049a5ac8631a6c5f367b7d824fc0d8de39b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d8/d859c9c5be04ffc41479b306814a933983eaa235"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ba/ba35053358ede7c3bf33a4c344d66680f09008c9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c8/c84b0cf222e7dcbedde8eb9deb98835032f4d402"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ae/aedeb53dd3315f964ff4d10d0003e4c5f41d1bb0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/46/46e5db05b1e91ce33c9c4c63260227fa629230f4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e96237fdf5e5e1aca09496b9192243651525d0ac"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d2/d2c44730f6c93676d4e4316add92e424d0a71a33"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5a/5a368ed32b3357e31629451ace57eb30d90e8874"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7d/7d5b3b403a11b6dd4c3801c4f4c8bf7ce9a8c771"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/eb/eb58ef697b2cbaed218edc758e00412302c75962"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/92/92488929c42221fb3f1dee397a32d2e4de615f3c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fa/fa6d89b586c5ca29efe85c8d373ff9ee19488d40"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e7/e7e8d393fc03a476227890e9ec9319dcc4b400ea"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d0/d04dd6d1f050353ef9e3ba9c45f407f831903c69"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/75/753a88c1d9b3b46210c18ff07974955463edd18b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cf/cf60aefd0b742c3fa15e808c1a0c33aebd534cc5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/aa/aaa8f1705c873ebc05da460657c8b83fa01ffd57"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6e/6e0f9074e049a6c30402d70cc75a5da99042e00c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/28/281b87984ddf8e94324bc86911a36c971cb3d831"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9c/9c7aaf49b3096a69a2d6ca62c1067400a2b70814"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bc4c2e76d3b5a0e6f9d5837fe82ed26e808aa918"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/40/405e2f82caef7f79eb9e26886520711e446366ce"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e7/e746ec4574aaa047be3076729753c2c75fd34630"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7b/7b4b5323ef066caa1ae43cbe66fffd9dfce4ed32"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/35/35461b6a4253db40973549e82d91f267c686be85"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c4/c4b5265bbafbe058347058a257abe33a0afb5ab7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c8/c8cd465468a0fd41a1d5cc24cb499862b5ade2cb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/db/dbab0094299eacbce86ad427edcb34b8342861af"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bcc73584d83225383aaa6affce905392c96afe86"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/57/5738d7f49ef30adcfc4f2ab13e0b1d74f09a1289"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/99/99cd73dda425ee03836c2274a0fcf331139773dc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6f/6f1d403f47725af0f4c42a74cfec00ff59153160"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/725e5179c72444c6d885e39c27e6b31ed83d58bc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ea/eafa60d7ec34f86e8f07a001ddcdf5c4600bb174"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/88/882d092b05faef1cfa6af43d642b9e8843f22756"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/02/02073c284f025653e55f9cde25a4a62723d395fa"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dc/dcec2d45fbc25f74a399ec9f8001e0ecd2d5d85e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/93/935f1a575322bd0ec53a919fd061321216889104"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/48/48fc6c25d0f1c1f0edd4eaca2b6f934d4117f440"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b3/b3f91f243eceaa25cff7488ec2dac732e22cfec3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cf/cfb956ba9d26cbdacd16ef77d58764df783b2c7f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a0/a0e62d86e5899405df4e796fe648e091d828691d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/57/57008a7f564443d563968fd040fc13ab226fc8d1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8f/8f23820fa28830dd031188c20acb35af044aedb5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ed/edbc9e9cb9dfeabef93207fc0bdee6ceee5df7bc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/77/77a7b79d4f2ada27640866ece1020b631f5bdc54"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c8/c80439669ee4c5ab6e236787f57fc6aa980dc6f9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2c/2ccb16055e7974aba40987a46c4b6370b9296106"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a0/a02c38569979cd6f4305f9e43a7a9fe26477d161"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7b/7bbbd6126bd37b4f2ec059d2784f95310bd55b75"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b6/b6f6330f1a5c1a3a975e852c02b0543135295d86"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/12/120def25aa3d41ceeae166c7572561b4fb345900"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a3/a36f9c11ced9aa4364de7f26bb033e32adf9ad6f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/44/44380f86e13a06b1f0c6feec2d6644b67e6c4d9c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ec/ece3a1417e0eca0a748aafaf6cd9f5e99c314991"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/95/9580708c276c3ad24703ea7843e317b2845d272f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dd/dd1846c866f5ef87e056a3f14ac156959b637726"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/40/4081b6ba7b4e345a0c48d791c54b6f59c1e2e1dc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d2/d2cd73933fb1f6dbcb0dd170fde6fc8a49d709b9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6d/6d7eeba0ba69cd68acf1e2ed5ae488c5aabbc9bf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/be/be565339d494ce6ff788480a462bce0ec69c8ded"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b4/b489c51eb82814562b6e288a889e36ccd018928c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/24/2433e0f1cfd53dab77422aca9f60f3d9a86d9991"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cf/cf601e6c603b4186919f49462594da6e66edb7a2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/11/11b2b7b9cac527ce8cfb1cee41285c163ad75869"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dc/dc6b3831d315eedb3e97823c9ab1ae5092dcecbd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d6/d6ceab79e5cb41ab8181188361bdb553b2f645a3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/559a1c7dbf17f8357b6d505f2a072f22efe0f43c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/73/73909900231d6f994e92cea983eb34d20cdd6461"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fc/fccee35ec3b76cf6cfbff0f269ed1a3b88459f22"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ec/ece0b410c81e9ba3e29440cc48005fc544aa5104"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/65/65bd63eb0e8056707f7f16f1a272187d3d32de15"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9e49d50a15b74ec6ac4745b0de3e1848178ea437"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/46/4632633263997de468f35d0227b5d56c22c911bd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/20/20abaa7d3b0baa105bc6023d5308f1e5d76acc41"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3b/3b11e7b50263049d7b7c384c622c8fdf28cf12d8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f1/f111af513ba90b246a872e995f4b1722368899a9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/721dffeec54cec90bb07986342532f327185886f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/df/df488adcf98b65d30473865945cb5ea1ee30108c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/68/68f186d1e9890fd4ede56106bfca198e904b57e4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/19/195a4b987b0b97c238de9522eb74dd1bfeab202d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cd/cd683396ccd955bfd218020dbb1892808def402e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/08/083256ad8eede9ca7191b7667971070429d824cc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a9/a9a83e3f186b3af56a9844b8d4976c6251ba17eb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2b/2bdd1bc318559543fe0f2a8e7338ef44c0290900"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f8/f85131ddb8e80f13d8917fcf9bd99256f8a7695a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6e/6efbe479d74614c5f824fa5aafa295ae936b3f9f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/76/76aa158461bacbcd138f88c0338f56525bfd55b9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/35/352118247b942b2c0df66f2a9a60cb1fb4792446"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/71/711c8d8e7a1a67ace08c33a544aa3a1157ab97e2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/61/61112837c4cd7174fc0cf1ebc569275c45b089ca"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/50/50733b9cb1042acc3bc38182d7ccaa65e538bb57"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/69/69ca9738d02cd8476943060a66652496c6669742"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/52/52f58da2e750cf03137c968261b7af5cef599a00"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f4/f4ed4c71699d853437c14fb9b3d236b78108bb53"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/aa/aa914f7916d6f90042841cce5972b73043eb2101"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/75/75feac0fe57873c7f2e93d4cccf24014ab8dc905"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/db/db6d67850ac177a7407748d7efa52fa1b7b57982"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ad/ad126e435cca94054bf0d616301799a105526cde"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c0/c093e925b560d3da4c9b1ef5679d1da2a5a8473b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ef/ef1fea92382e98356a8c39e3c99b91d72d55f342"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fe/fef8520e0d345fdc7c270687c8e4fca62be36c76"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9d/9d034bf3ba36b297487b2380b908713982a83a3a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/77/770b3f1feb05b9b941d858eb72b9d04ffc5d52c9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/94/942937fcad0fefd61e019678e3710f3f077757d4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bb/bb92fd6971430a515f508a6734392511385826e1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/27/27c78cd09f7fd1770a41d78247ccf57c77dbc773"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a2/a2dbb90f23b0babe7c569ceca28db49d0c112714"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/60/607d51883e137d5d423dde865232ab1ee78f2694"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e3e9f37c1e0c12c2993d25c28b89e2f0797ba5a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/35/356fdb6192cf96aa5d5d9c76413f412f6a4d66a4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e0/e0672d288b09996f7c7e1a0ca696de82b7a02d18"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/88/88ae6c906f8f94add2fe904b59c94e844bbcef9a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/43/430c65ac81151d873a27d611a9dff6c562e38c4f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4c/4c4bcc6905430286f32a862ce69665c51bd9938f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d5/d5c4316d30feef5213077e3ee24a7f52c5bf6735"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a6/a63fd7965328425a0a8111640de19428d841933e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/86/86a2a7206c769aaa9435aabba70be201cb3e3a6b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/32/3285a993220dcea1fc37e98b9aa9219422c2c095"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5a/5a2449cc3d4a6ad36598847e501f956e5a3528bd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/50/500e2543034b4c026fb175d48c47196c5d013fe8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5c/5c633c345fe4cb87c36ada2fe2b5da1b80601cf3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/18/18237686efcaa1bf9084173c99d11ce0d37d4fc5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/65/65a1a69845133187d6b8689e6ce9707da10f21a6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a485082ed0820eeeb9df13f84f26b14744ceeb2a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/560dd97e6da8badbc8ac00b28c45312e60a525f2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4b/4bc87ab869e17732a20c7518a327136baf5b2c26"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a9/a99bf88163bcb576e31e6e2275145afba6d1b4c7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ab/ab615a912fb8ea06648836e0ec1cbeeefe117da6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/58/58efedf302e0203a6ff9e59a6535d300286c5594"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/05/05baaf5ed0cbdab08292b3962e1b1385e13b9dba"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a6/a69a66bfda52a42ea8cf712eb1caa8830046c14f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/62/6226903c5dfd8ac388f9d64a5fa9968680ed3507"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f5/f5e1ba4ac271b4c2feee86a4d04e32279ea99c10"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/56d6fd65958fb25bf9b4033a87655b591e222005"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a3/a3ffeaa0a75b8d2bdc949c181a6f8db78f8976ca"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1c/1cfd864cbda555477ed9523e640de0d234c18858"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c9/c9ac72409cbe6093e84d72a2a5c719d9e4a0e6b2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5d/5d9055cf25f126c47e18637aeef917fa1ef61a42"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/52/5288cab96e26207edd31307c9c01b6902306e4f6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/59/59034eb696e186d973dcea0b162f01e38f1b4f31"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/10/101164ea1b442a8e1e8ca181d9cef833c57d7be3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6f/6ff26a1439fb6f9f353c2bd623edeb936e760855"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c2/c289aa46fcbcfaf21c8080d57953fd45a4939294"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/84/84c3b008dc1d5e0dd5e8ad85a06eca29f0591e48"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/38/38d4d36bbe40a48c3a8ef97735b59b37f013fd6e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5b/5b1675279bbc245fc6bbb705de8ea09fb3f32b53"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/24/24cdac5a80fdad7ab31dc0695b57ece55aecb21a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/51/515dffc5d6dd216550d69e61b2eb9c3593b19a20"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/39/396b8b46e593cf55d843853b704dc054ef614e55"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e7/e7f0f24c2c9f4bf83286b17109580d3e845d19e3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4f/4fce41a2d0890418ae1efb03d1142ca74d00aa61"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/76/763cc79934a572b84c371cb49afad5912f29d2f1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f1/f1665747da14569c4de55e07884deeef18a40f62"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/47/47ad81223bcec870206484cd4d1a6202871df331"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a3/a342f566600caf73464323b20b7770b5b9b7893a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/64/641e601132b4adb67951e0d49c1004cf1b86eff2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4d/4d03069c0e14794b463f563044da46433776da60"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d1/d1ad2cbe6584d9cd9483483f8655966d25a251a0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ac/acffab0bafe2c82ffc8723880aab5ec1682d4329"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a8/a88e0436e38512171a3ef819249c3d1a2650540f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/19/199c9f150822950385b9bc1d840605a6a795bd27"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/52/529abcb09220f0ebeb595f32bb663d026a7e0ae5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a1/a11ac56ec61c17e99f4ee33d8712404edf442720"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/68/68e0a58848bbdad12ad2b216d7244754459c9516"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/46/4609ec723b4e724f44c653b82de40ec159d2eea1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/00/000c82756fd54e40cb236199f2b479629d0aca2f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a8/a89bdd809baa83cacd329f0219bca1f612ccda5a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/07/075e1ea92d5564d7bdf267ae975044315a41a686"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f6/f6e2067571631aae206000a501c9adebe862e32a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b5/b5eca1979e69271b2065ac67ba2c37b5afac0f98"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/00/00e06362a31ad7094e452c5bcea837b061825cb0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2c/2c20816632caecf75f00bb968f51847e3a982e75"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c9/c906c18d26550ae15c75e23f2c5066e4fc678c89"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5c/5cde2500773323f7997d75062f8a26afcdf62b2e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5e/5e2ef521293719bbe22bbb515bbcacf4c233a075"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3b/3bc8225914b1be20db68fcdae202d5acee3234c2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4d/4dfe0b607c5de2e47f3b7950c56bbebbf3115957"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/35/35f0b3c9c462a6c21ec213fbda2437a0e6427883"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4c/4c69a6edc25d973999aa0db2bb46b583a31da278"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/65/65b49739d48ebc47879ca5528c8283329980b304"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/50/501b40b97ee55cb7a97943ee620aa05131089fc2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f9/f9f79162efa6667b753c1fbb46ff9888e8ce5f32"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3c/3cf3e8d3aab0a3092f6c6bf681ff156bc9653859"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8f/8f7ff84e460ca507f654168f1d24e82637517940"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a8/a8eb0b1ce4abb53334ab75be82dc465135c4a27a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ef/efa5acfa08b210ba3087b535c40549c0ed8916f0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7d/7d801582e08be973d1a41469d1b92916278d1e88"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/97/97c65b93b9bff839786e23d8cb7c98ef3be4fe2d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/57/57aead4d024109b4ed37dcf4c73ae44ed06f04a8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d1/d14112bd7351ef48f193aa27b4517d4b0960f7b1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e477f55b9c4875f69cb44a2aabab4b14aefd129"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/10/101e3535d3f482acb6d1d0259d53d12b25979788"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1d/1d20194a6b2f883be478830f129e017257374629"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/24/242114e81d0f4858d91fe06b7e78b86eec3127cd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/18/1882f71dee4f377dde08a517adc5f3c585d2d526"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a7/a772db3c8ac37dfeb3a761854fb96297257930ab"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5d/5df4a02b1ebc550514841fddb7d64b9c497d40b4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9a/9a7fe638bb8b3b1060b3830c63c3ce3d03cdbe1f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/25/255f7e21123c3647bd80c973e6a73d7854b2a1be"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f2/f224168e178eca861af133c78209b662c4d1e452"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9b/9b8737d639df9e7ef99ceef49ce11df42eea9f12"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/be/be73a79fb1ab966887a8b88bed9aa6b3d9173d71"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/32/32317250b0c0ee18ed1e0c4ae3364fa796433b0a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/89/893e37d8d608cccd9c2404e785597c6a7c5f3593"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ae/ae27c6817985a9acb0a0fdefab89ff5d82dbe009"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/550da80d936e05a7bfda43ca5d8af5b3779320f1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/80/8072827813f0bffb9847e636245edebb5ddab198"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a4cf4ebe4c475cd6a4852d6b4228a4b64cf5cb00"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/72a006be3bd693aa23cc2f8e9c9d13ea6f829aa1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/22ed26394cb6f6b5eeb2ceb54fb50608798d19e8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6b/6b2f86a35a3cd88320b55c029d77659915f83239"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/79/79afbeabcdbb063cfa00d544dc00beac8543a581"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e3/e3f90fb5afaf84475dd31dca6f65378a455d17f7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78ee5b46b6615191b7a16d259fcbda273762297e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d8/d8caaead680c20a4f51361587aeddd57a3357a72"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/24/2452c64a55eaef86bf1b668bb4d5f3b641cd8f25"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9f/9f1708a6409d04370ec12d0add015b11abbd5371"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1d/1ddae4e8dfa605e27ec8278b3e312597b674437e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/77/77a5d445ed9ee588846947ac3df63f84be6d569d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0b/0b29f5ce8c4c10fa4184e5d29244f3bc121468a0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f5/f57577fe6915175f9e4576e8d73ad4077a381433"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/69/69ef2fe8d6a744689953fd692d0106b0b2d2a9ce"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/84/84556bac99c01ad006552cf5d96494817e9b1700"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cd/cdb0293c5e2bdbda21798af4e61a4c171c8b1ec0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/71/71b5fc7aa050892f8c9a9ed2713cc1ad8874742a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bc2f6a5a1b6646eac1681b7414b098089aedf3c6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a5/a5b3f3cdda4d6e13629ccd0e2a38e1f06baa491a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c2/c2e4001d9ae8fc1f066a914170faad4c45a84e1e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3d/3d95ea49e91b4295859b193bb41b009b92250a44"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b6/b6a62224be809aa0c0747bee94499f0ee51ca2b6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4b/4ba55627b6b9ce64b4a48a00c990d5855b6064cf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/30/30e920526eb5855065b873e30d17b4d85bfbe570"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d7/d7d5be6092d00c2f7f68bdcbf10ea3ac3cfea30c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/36/3610feb2a1a575026cfa3ab44965d114e74ea583"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fc/fcf4f90c452b7b511d50e3959ae05036d13a7cf8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6e/6e0488ab07b9539fbaebc093f194bb6a95b2caec"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f3/f35e14af35d1d12244dac9e655f4e31d4ef84e1b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bc85d96a99e84a234cbe23841f87e84e71198be3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c1/c18fb5eacf0fdb33c05eb806bc41332cccee43d8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d5/d5b2d34e0c07a6c09c1adb17a15e50a626a88bc1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6c/6c5a03460012d7b76c16d0dbaa01c443a6ba094e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/32/322374d89ed809e75005cdc4f6479c959e15aee2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8e/8ed3945df8b9264c6451c153357475482d9f2066"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b5/b5bc9775243437d87317ab3a66ec8a4d5b96c83d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bf/bf5086623d5c6735271074b263116fb914ed79b5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7e/7eb3affa45f47f919e74523a55185e65c2081d12"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/96/9680c9dcd637ddea8e10a0d73705aa155d04a132"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e8/e8dcca0e494a3f479f58f581c9a8e297cc92f4e7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/33/33acf13c25f65a432348e9476eda67d6a34831e3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/69/69b6e589ec3d2c9063972545e83ed1f07e665094"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b8/b88bd8618c05232a7287799ea9246ae12f5da9d5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/40/403c56cd190fb7587a26bcd1b7d2abac598c3ec0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fa/fa73977dd28020544f7fe2553e5604a6865ec1a6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dc/dc86fbd59cf0e87cd35b22df2a2df899ab8c1f7f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/81/8184e851170619de93aa56244fb12c472a2ddd7d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/10/1028d0a373790e14c34786a925c4656bdaeb4c4d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4e/4e94ed53b6059d150c3bb2322b4af9ca9514bae1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ec/ec4b0396dd2fc2da8fab91ddc35218d3426349b3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2c/2cbbcdfb97939c469cd4ccaaac74504497c56695"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c9/c9f7fa36ae48eca0a1f6ce024fde5d3472d30b4d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e1/e1187646b6256b92a1384f26ef2a7e56efcbe00d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ca/cadbc5c34979baab1a93f5cf68a50f9bd44ef5a8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/03/0349ce87fe856ddf8fdd94a559bb29061b002b6c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e0/e0c88ca054666aae58b89abdcf377eae525aa13e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c76dea473821e2ae9a1f006a4eddfdd0703eecdf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/40/40b8e244d03ae17483edd4571bd851e10a97050f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a2/a2cfbea288280419ec0c8fb75d8ee5395536ac02"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d1/d1917b9be91d60a40dd0bf804580c1f494e9ae6d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/50/50a59a4f56e4046701b758ddbb1c1587efa4cadf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/74/74da65c99aa578486efa7b69983d3533e14c0d6e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/14/14ae57a6bce3d4254daa8be2b098c2d99743cc3f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3f/3fe4c878450d4dc2bf3ac304e547f20d4efabad8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/59/591f41a2c5f53bcc60d7ded982fe29e76223a8ca"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4f/4f8c3f9b4f290f63c78bf3bbaad16906a3ccff29"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/46/4664de25eb2bfc88ebbd638cfae6934dd968ceaa"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/45/45cb6cbbff2d7fc1daefbd85b031fd9dcfc70e7b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/62/6254527d626a2c7d80901cc2e62dce3ba4bd81f6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b9/b9eef13c2337a6335c4523858619ca560dff4496"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/27/27fcacc68bb77f01b23ea9c9d36d9018f8509cdf"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/47/47800737d078e751698df291054adc596ba8195a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/df/df1ff11b79757432c5c3f279e5ecde7b63ceda64"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ce/ceaaaa1d57dfdfbb0bd4da5ea39628b42897a687"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dd/dd85fb564e96ee2dbd4754f711ae9deb08a169f9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5e/5e7d63e75c6e042f452bc5e151276911ef92fed8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/71/71cc853556f7ca5784c9e9fc8e0bd6778d13027b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5a/5a7ce2181203dd558cbd55d02081b9e95a07f16f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b0/b0b12118a97ddd733a50e9382e91a21652568641"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e2ee9a161e2d6ea2452e5320edf8b4b01b63e350"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cc/cc1a80b6becfc6d6489c069f053d0a8adc71c339"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78152dc42b036e0de7616e6e669ce5a81d17f82a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/0f/0f374764aafba398f4ba90dba05a53a9e6166138"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/98/98a918eb2694defd19726436d4b9dca9e7dd6a65"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/95/9528b6a76e7bac64ca1145cc682e8a8448cc04e5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c1/c157c56846f0e50620f808fecd9d069423dd6c41"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/783ddccf4681a0c50d3e651f4e6ac27a0f4ea76f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/87/87722a59c8d488370f3d430cd4c97a3161081785"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/15/15f38314274e759c44f50ac641d11bde12474a25"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e28d844995368de1d45c724a5d371c9952ae5ed4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/03/037b9fb7f74381f354739d015193dc4a6897f620"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1a/1afefaa39a53606d2737bab9cb3409350cb2dc9f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/46/46244605b8663a29cdce7bccc5b2d038241e32ee"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fd/fd2b6f745b05a2cf44a4e010f72631de2e5099f6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/20/20d06589bd5ab81a73989bdac8ca59ecd4d66932"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/69/6967f0af60f480e81d32f1f8e5f88ccafec3a40c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9a/9a20be18fed05330f745a54eb8aeba11aac5403b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/43/43388701fac432a567fe9fec421521e6348ad780"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/30/301f32642b654addbd06a430768fead464fd24c4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/70/705a155201cc388a0c0c6f7435ddbc0fcc56b5f2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/93/934b16e82b94d5790175615303594f0ec28da4a0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/88/88a792430dfff97582ab49b8dc9477cd9d4e5ebb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/87/87edc11141fb5a045f2ed830b545aaa73f96ee99"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78f034d58779fb4d22b00ea249015a0dbf4e7b3f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c3/c3cd0db760c980287b26ef9c0894f66c4250724e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/03/0369a1236a4b9ca219fd3ad7d19d0b5237510b1e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9e5e2369fc354a082c861494cfe8767d327813d4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8b/8bf3ecb0fe9a6a615f5995e3dd21b6c39adc21d5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dd/dd2f7209c2a58b0886beb34d49b0512b49adbb7e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bd/bdc648e04933df8ddcccc84b375d6556776d4331"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/05/056393a33a9633685c3dc3be2887f5cbd7dbc63f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/18/186d5d9481d59cc99bc4be1b5fbb98d0ef877b8e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9d/9d485556b89bf776042080774679c37300bc744b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2f/2fe092579d9637e2d160319820ee08e60a237bb7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9ea8a9e105321891bda18b9007b383b40aa7c076"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5b/5bb5a04e776d69ca12b1d7bc369975f9bf62e741"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/85/857b75738992d25e338dee640ab191323bcbf798"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/df/dfee39084c771182f6b9e7cfb8c8bc4e255747bc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d2/d26bde554d88f0ca156baf471c44ce2c0e68176c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9f/9f2c4bab5ed55f1714fffa223985c81babc8f6c0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cd/cd46e41023887558b134547e28327de6e7df189a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a1/a116e396d95a0ee245000dd4cdcc333d38ea9e3b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a9/a94a69e56568f5789cab05382cfd81f601189fd1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f2/f259be40364341edcaf88e339bc24ab01e49845a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c6/c649e60ea9a99c97501a50d2dc4e579343e91ea8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a9/a92ba2b8f6abc41aa8d679ad808a81d0aafa04b2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/7274a2231ed4544a37e599b7b014e589e5377094"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/87/87c47bda3645c68f18a49e83cbf06e5302d087ff"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ad/ad7d770b7fff3b64121f75bd60cecfc4866d1cd6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b9/b9c60e807ba770e8c4a2b1bae81d51813dc64b6c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8f/8f45b5faf6dfae2065846d26612f7552b73640dd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/22a491f266f5c3cdd6e669a9493daaf40c9c8575"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9833a1512b57bcf88ac4fdcc8df4e5a7e9d701d"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b2/b210a3c371441b77fe873133b2cb7b63e367b2f3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f8/f86c466225dad2f32c90981485c1965671b3e8e6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9c/9cbed0e40296f68c61090c9b81816061e068a0ec"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9b/9b2a01e0d0456b8fbe33557fbc19d4fe342f94d6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d1/d1eb3d2e39bf1f6289cfcbca44e1c9bb508b20f0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ec/ec8a2cbdf68b4e2136098ec33695e1c53625ddb8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f4/f46c38e7d6d7b19d5d68aa18b557215738deb36a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/83/83233451430516d839eaee855a2f789b8985d457"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6b/6b44d0539073353b7a05330ccddc5735ba5efca4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2c/2c4f3f8f259dc782867727311fea30875ecc3917"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f3/f34afa3ba5f756e90a1f61023bbe069ee8442608"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/87/876655d1691803f4cef17a6288d971285be79c6a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f6/f685021d4f26d6b590bffb341908e25e92e18cef"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5f/5fd568d724ba7d53911b6cccf5636f859d2662e8"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/56c1d0ac0de2265018b2c41cb571cc6631101484"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9c/9c63f2a3681832dc32d206f6830360bfe94b5bfc"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/55/55da1856e77cfd31a7e8c3d358e1f856c5583198"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/227ab99bf7c6cf0b2002e0f7957d0ff7e5cb0c96"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5c/5c971029d9284676dce1dda2c9d202f8c47163b2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/76/76de0a736928eac5003691d73bdc2eda92116198"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bc28801224a0aa77fdc93bb7c6c94beacdf77331"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/81/813ebd91b9c3fe1ac8f89f13c85d0755678f2165"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b8/b88cafe403394cdcd4de0e3aeb7b76f24170c6fe"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1d/1d761cb3bcb45498719e4fba0751e1630e134f1a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ac/ac7a7c8d106e26abc775b1b46150c083825d8ddc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c1/c109b985a7e6d5d3828c92e00aefa49deca0eb8c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a47adece748059294c5f563c0fcac02fa0e4bab4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d6/d6212a1d5feb88d76b9a83ce5a27ab4e6d4c20bb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fd/fd446ad40d24edfe4fb789a6065276e164ea4b61"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3f/3fee58d7b2c99ddbce962618176637574ae8d67b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f7/f78ede81160002fc0561218c7ecd97e91cccab7c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9a1caaddcde79cdac7aa8eabde50d4cfd1bc578"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/98/9813c8185197f4a4296649f27a9d738c4a6dfc78"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bd/bd1750c016f6bab40934eff0b0fb64c41c86e44b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ab/ab07279288fa49215bada5c17627e6a54ad0437c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a474236fb0c75bd65a6010e87dbc000d345fc185"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9f/9fd6d2c633d276b952f2ff2aaa1fa7e5fb5efd2a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e9/e9bab7d3d15541f0aaa93fad31ad37fd07e03a6c"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/58/5887d10234c4f244ec5468080412f3e6ef9522f3"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a4bc069321a96236fde04a3820664cc23b2ea619"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e2/e26fa3036cdab4c2264ceb19e1cd197a2a510227"  got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Got  "d41d8cd98f00b204e9800998ecf8427e" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4a/4a2e3795ffd4d3aab0834b7e41903af3a8f7d197"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/22/22a383d9c22342305a4f16fec0bb479a885f8da2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a5/a533e7ae975e62592de868e0d0572778614bd587"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d5/d5218034051a13322d7b5efc0b5a9af739615f04"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/48/48dd05ab2e4626d74206c2b09a628a3d59ce15e9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c4/c4810a3de80cb57f9cdf8deaacfd36cb619cdf0b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/af/afb01196e2179e3b15b48f3373cea4c155d56b84"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1e/1e82a43c30cf8fcbe05d0bc2760ecba5d2320314"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/27/27722125968ac60c0f191a961b17e406f1351c6e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/29/29586f60bfe6f521dbc748919d4f0dc5b28beefd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/85/85ff970401cb1ef2e812f943077ab96549315d0a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/94/944bc8b8e1e135340dc4afc6d3416a01222674a1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/59/594be3eaea9a2b92095eeeb3b1e01e755dcb8ce2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cb/cb017131516de9359cb81fb991f5b3694044f8db"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4f/4fd07421acc4fb19088908f0c40b38cd4ad26f48"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b8/b81c9d77126abec7d7cc2ebb7491e25b6b861670"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4b/4b3ecb81a2136dd4dc6a32120224dace03ea465c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3f/3f0a1aea8af9451493927ecb8a18997881ad0e2f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8a/8a0664c68ad24590ad5836fe237f41275df25b5d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b0/b09ad1252f8d849367a1a7455cd97493287aefa7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cc/cc96acd7c25af238059cbab1107648f8964648b6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/33/332edac716a96977e2bb5a7995b7139dac08edda"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/7b/7b52463b2df4685d2d82c5d257fd5ec79843d618"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/97/9795a729f333a3bbb269959fc21bde2731c474fc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/729b2c09d5c588787b23127eeda2730f9c039194"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f2/f2e1dc557bcea55b34430723dfb4e33120a2dda0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/37/37fb8e6e0b534c33bdaabb8d083c48a323858e8c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/cb/cb94fec6672af40f5418fec044d32990ee96d7b9"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c2/c2d8994702c664a9bedd4f1961c585507752c7d2"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f3/f300aa5e8f7b943f9b8e2a901e2d4fb8f7b83295"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/71/710afa6f2c33e1b7de74c260f1258337c19e6779"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ac/acfe947c1219eb7493130442ef184dc8025e8191"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f3/f3f2bc5d9de49c43f1d65ddcfc4619ea43095d13"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/de/de6c2b919476b9ba40a81fa54cc149cfcc1e25ac"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2d/2dcc88a24fcc775602cb622006b02862d865def8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8a/8a1963013018a8f53d6a72376a5b265c0d2e5ec7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/72/720c15d04d7be115daf19b024a37b498b6f7730e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a4/a448ca104c51d6934dd669ddac2ef03c0d35695f"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/01/017c25f046e93918d0591bdd9628eb767494c8fd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/13/131da513b18868576c3eed5c3921a36c6fa15e45"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/fd/fde655cdabb7140e657ed69315579c210c43031e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ed/edf3b3dd02931f1630c3663c6d5082a71da4fe9c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/56/5633f7496870e805b35ca06777de782f49160347"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/f5/f57f766c0266d36d7fa8efb006aaa95fcd645a36"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/e6/e6cbbdefe6ce1fa4d5eb3387b097e1c24b3258ab"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8a/8a0e1c7158c4c610eda89658128fe6cc7d6d8110"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/2b/2bc6dcd491a02649614e5ffee81958b1e8bdf813"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8c/8c791963f3d67ee14e3f084da3d7a14c2b99fc6c"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/dd/ddd313e9466974aff2b0e39edd819954edaa63f1"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/02/022b14caa9cdc6d43bec35792b9be19e3ad7c909"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/68/685f29bcdcc62c0c58f4d137d30fcc40123411f4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/8a/8a6901092669cae60fa67c2a62c5e9c4548fd056"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c75f27495baf4b0374fcece255d665d1cbbbebbd"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/74/74d3924ddd105231713694303a9c7ce070b58f9a"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c5/c5cc8bd843d90b8ab4fec12a1ab023c1c1ce7afb"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/84/84fa71ecc0af0dba3f20afa2d59e428c304367c6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/66/66464e3f372f6abd434a27fbff7c03a729ebe9ac"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ac/ac61acec46bb72c4e11b3fbe8317bd593d3c2120"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/4c/4ccb3009e24e1cc0bffe18f544e6fc7ae3cd3b64"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a7/a7602156ac3a8a41e42b833fefafbe80f9914fd5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/3f/3f41ed39706e90a4babec03798387b38028be639"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/14/147c0bfa040f23f8ffa6a0fe649d7d8f8c8aa303"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/16/16f20c44b1662917db565be399caf1d68e020430"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/15/158ecc0a1b876b4f3c020288e492b2b7cddbd343"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5f/5f839c343f353936498507a4f3da78ebf69182d0"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/84/84e6480d18c99ad57099ae117a2f028c412bbb2b"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/5c/5c2894bb6941070ff3a014004326cc05dda28901"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/83/8349f016bd3d5b42f45dc12d7e0adfb300e245c3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bc/bc4277498220c42b9b6266310c3616793aa17ae3"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/43/431d3ec2c3a969d30f982dda71ff3e9cec17d399"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d9/d914f93e28eea9d7ccc225064c74147d993142b8"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/a5/a568ea57eeca8e9494837d7eda1ea2ed362186cc"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/1c/1c5095ce89d18162efa0cb42a5a91f8b4d970449"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/89/89e887e58fb533f7dcbbbcafabbe1e8051a4c6ca"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9e/9e17737e7bc35766f674bf4b56be14a119fd09f5"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/23/23e46a6151e9ef8cf970df137f914ecfedef97f7"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6a/6a69ee43b781f9b05d9965da7a7dd1adb9d3d4b4"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/78/78ffefc12f41ac971ee33ba5f30bc1a12788bb9e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/9b/9b84cea77437d7af38d50695543791cc5d9908ae"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/b7/b7312c5ef37ea6e0f7b51c18c9a53d53da0c9468"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/90/908cb8d352d2456ba427530dc242ff6dfa319780"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/d3/d304de107112235ae44caf7f856f8bc668909146"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/6d/6d2d486beeecb68f3f1d0d884a11f47097e59457"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ee/eeb9546344f37e2b8b48d0c7a173d677443aba4e"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/bd/bd27bbd59ddc25ae24e1e5102b43ec7abe66fc3d"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/c7/c73ea4893d2b64c11036209e7782e7fb005934ef"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/ce/ceae6cbd84813981937687c00b911ba385416fd6"  got  "" 
+ INFO	Downloading  "http://resources.download.minecraft.net/07/07711734555b8c1c1e0f1555f9090309a69a3a1b"  got  "" 
+ INFO	Finished  "http://resources.download.minecraft.net/bd/bdf48ef6b5d0d23bbb02e17d04865216179f510a"  got  "1eea6fda0ca03698efba7b045b5375f9" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 1 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/bd/bdf48ef6b5d0d23bbb02e17d04865216179f510a"  got  "1eea6fda0ca03698efba7b045b5375f9" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 2 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/92/92750c5f93c312ba9ab413d546f32190c56d6f1f"  got  "4c664febe29f0ca75ac519f0465be466" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 3 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/92/92750c5f93c312ba9ab413d546f32190c56d6f1f"  got  "4c664febe29f0ca75ac519f0465be466" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 4 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/7d/7dbc8bd8dc11c8011b38a682f8a127340634f02c"  got  "7ce52cac6da8efae852a2b1a0b9e1652" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 5 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/fc/fc2139572f55c973aedc694b8d633f2a4eb0907a"  got  "42a9dc8ae2bffd066575c9e1f4178f9c" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 6 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/91/913dac82b2c852eb1b6f371fe14456901386cd13"  got  "df38aa7527e6782bf1c3b4a2090c0d5c" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 7 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/2e/2e51504c234ea51b194ddf26871d20ed457483ec"  got  "6f97749d5837246474e75b9ffbc6e07a" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 8 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/99/991b421dfd401f115241601b2b373140a8d78572"  got  "f939cf3c2b9557400f2c3d2e4337e503" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 9 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/99/991b421dfd401f115241601b2b373140a8d78572"  got  "f939cf3c2b9557400f2c3d2e4337e503" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 10 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/33/3386789f844a747d348a42386ee941daffdf34d4"  got  "49cdddd2c3b6d701a3bc56c3a87c01f7" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 11 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/99/999257ac419cf90ec067b750bfc074e57015aa75"  got  "2ed41a3e64141a5777e3263501987467" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 12 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/22/22bb966ab55ae53b7d5960e13f7bc11920f380a3"  got  "d53d85078314dab8db50287323db633a" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 13 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/1f/1f8e5f3b70b781bbf6c2ebca61f6647f06b67603"  got  "525f72c17afc0adf014ca86a48d615ec" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 14 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/a2/a2fbcec6e56101db42bdcbbf93461917e3ff9a9b"  got  "2a529da9309d5d9991475ce14c506afa" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 15 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/a5/a5b9750a30629916c454b879246231ebd1cc9a2c"  got  "260be6b1951021df037a6335b5647bb2" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 16 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/71/7197269073c558f5ae376f40eeae0ad29b05c5f5"  got  "220ef67f757e9774698eda8af6321851" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 17 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/4b/4b0fb97083de71e8b23e144c7cd426fb3eb09e49"  got  "29ea4b64055bfeda9b90d2d76d1a9e0f" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 18 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/81/81187dd7f36516de3a88d19c2f3903f74df1def0"  got  "17932b50954296814c353beb18b49d0c" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 19 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/c4/c4daa64350971a7714218efc517de25e2a79ccc2"  got  "4e98615b0cf53d8c7ecc8f42de462296" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 20 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/17/17567e7dc53a5e939b5bd0197fbf95d93c002c2a"  got  "91a7d373c8eafde3c4e70f9e161a3751" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 21 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/0e/0ee5c0e080e6f34e291a604e2485aa2c710cc81f"  got  "c024f013aad17cee79219dab247fda62" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 22 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/42/428263c79973ad44876048f421511aed401cf2e6"  got  "c64fa0070da29238c8c4b3f7a21f1752" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 23 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/e5/e55edae0011215873faeba154c7d89f590ddb748"  got  "f9822dbec5e0c83fd0d020b520a53dfd" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 24 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/6c/6c7a6c4bae01c22e67bed10b69d46e67d5d67895"  got  "9b57d3314f1f5986c8dd65cb76dca0d2" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 25 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/33/33747279d2752138df2d80cc70771e042457017f"  got  "d47252851994ce5c45c0f6c94c8895f0" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 26 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/4e/4e5de18b13004b53cf8e5d46f36ab07b165e7362"  got  "8de5d7770f738749fc3b2b43edb06c49" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 27 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/a2/a224f70ea345fdb44f89a7c1b7c200b4239e6577"  got  "d38cd06deb643178fda84cc1ceac27db" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 28 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/34/34090e3d3a908122ff2734784575b5a35c51d911"  got  "2884f44620889e93d50c5d50474c122d" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 29 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/20/20369b200cab4b4fb4975d8468395eafb62c50a1"  got  "8ffaa5e1ec1d4e2e50b4889c10066c1a" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 30 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/d8/d8fc393426b1c67fcc0a867233874670b5755687"  got  "439efd7bb3f584a15a86c85533816430" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 31 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/ff/ff77255b582c0bac2fb722d74b168d51345ab730"  got  "094408861da6aae68b78b2b39840c738" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 32 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/ea/ea1403be012b32d2239796a3617de19b6774fe06"  got  "2c35864d959d32bba2c130ecb9c6573e" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 33 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/b9/b968a786fb5ddd46e28e4bf5c9ecb9c6db13bb95"  got  "89e8e5d13ee98f68b2434bd653698811" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 34 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/0e/0e2933d361b38fc2aff7e7d09c6b723893e4dd5c"  got  "579bbe308a31b5a52823b0eb673b9db6" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 35 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/00/00c71b8f15ddfaf958c0c31da003031b8789b3a6"  got  "aefb977e8d4676354e31593da6bf78d2" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 36 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/32/323d7f116b2187c51ff76ae7dd1ac15c5d4d007d"  got  "8ca0482b856637df1029651da8941ace" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 37 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/f9/f92ff2e7e9baf2de036c780dab96dc0d018fd3f3"  got  "5392bb82718a1ab28a33dbad758e3f1e" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 38 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/51/51ffb69a87c411dcde1f3f93f9b799458e66ee81"  got  "47fb4bb720dc2eb361e97e18dff46cda" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 39 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/08/081d21bad358ef6922c43cecf5e0b8f30aa52e6c"  got  "f9308283478ebe0a8a8e031b80a703e3" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 40 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/6a/6ae665534a98ef5a051792a98ade7bf555407d7a"  got  "5faac921b10be36809e2cc933570d7ad" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 41 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/10/10c8a862c62bac263807bf39ae191d39f8e54e35"  got  "191af4ab6f5c214fa1af7035ae148d9e" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 42 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/fd/fd0b95f772a7714597740f625cfd5cc29c9d3560"  got  "e81d4f404268fabecc919caf6cd8e4dc" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 43 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/b8/b89e2223e2c867ed3077bbe4f233a84c63729c30"  got  "d67393ba9b917f2cb1121d9797d9d3fe" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 44 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/e2/e257258766f1430cd6e5a97def8ecac0207ae83b"  got  "06f55cdaca2ceea43bf202d9243b180d" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 45 / 686 
+ INFO	"Status JSON"  started. 
+ INFO	Downloading  "http://status.mojang.com/check" 
+ INFO	"Status JSON" progress: 1 / 1 
+ INFO	"Status JSON" succeeded. 
+DEBUG	Finished loading status JSON. 
+DEBUG	Status loading succeeded. 
+ INFO	Finished  "http://resources.download.minecraft.net/c4/c4e61eec725b91b5aa638b4e9155caecef57e56b"  got  "9677114ced137c8dc7692b8377f0bb6e" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 46 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/be/bef3b6a408db019403d8d756d0cf85b2c8ab61d9"  got  "451fc7e9967aca4c7b6306ebba328e5f" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 47 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/f7/f797f0bb31e043750ccaa7be27f60acd04b5c05f"  got  "a7657b5c52ebd87696844a7454cd983c" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 48 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/5d/5dbf29b5f54015d771873e9bb02665c1128a56ff"  got  "ce49b2490ed72e06ddfb241b61cd8646" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 49 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/1a/1a498de545784868b5cb34705b4663c16292f837"  got  "a37c8d45f977580e152e5ea4f9733328" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 50 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/f1/f149ea34fdfe2ffdbde2f7faa11eb2aa282fa6e2"  got  "cdb60a8ad4009200ac6d89dc0f093334" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 51 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/34/34b4b3f6f4ea91b7d631395f00ce43219d025000"  got  "0ddda9dbc5939ba60fc4af9eeb0be57d" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 52 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/78/78f839189133203e8d22d93ef8c9f4d02cda3023"  got  "985b6ab8b93cd8d4176f79047bf04673" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 53 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/8b/8b39739932fda786e72567c68ac28ff7efe99e80"  got  "a0f79ea6e3d5932e333e5dac3c6dfe9b" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 54 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/33/33aea58cbd8d0a8ad7b1b88432de02709342e333"  got  "4e04898866d2245e908f6ff388e6f373" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 55 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/0c/0c423a8686c43541591a8283ce711f476d0d4074"  got  "ca3e41d4da049f318f8c04b0d11f0669" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 56 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/68/68a7eab92d03a6b1e432b8783b415271f31771a7"  got  "aabf51e7dab288cf37c5d941892f82fb" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 57 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/d1/d17c0896a1ecd39c49cf9870d29597bac3a42217"  got  "4053ec48e9424897454a2169b40a6be4" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 58 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/63/63fd5d8c33370939afe79299bb3891fe17acb444"  got  "ae6e859c54ff1fadf8ffc8d2b43e3323" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 59 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/47/47aee6e1766ea8127c5b17a9c0416583a836244f"  got  "04d75efae40577546c0fbb925a75dcdf" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 60 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/08/08c19cb92fc7bb6c2445dd9743364960dcf9987b"  got  "364f7df2646638107f026826144732be" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 61 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/cf/cfe9155cc562c3e805903ea67c32a62ac1bfe372"  got  "286073946f964bf084ee8af99fb27a92" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 62 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/6d/6da5429aafecf40a160496adb1b3f4537a3a9c67"  got  "a0b0065eed81d79b112b61ea667f3e42" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 63 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/4e/4eedcb87b68eb6c17cc6ad8bb32b381341da08ee"  got  "4e2b4aef927e2b08d0fcb6450b5c7fd3" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 64 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/88/88077f1e3a47d62cc77fd6e81f04ff3d55644ae1"  got  "d683b37179905bf5cda9c8c1d715bcfb" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 65 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/6e/6e3c6a4b10e1446b7b7ce5d7342361fcf9b8da0d"  got  "402ade25b97ff855d7965fdcb0e090d3" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 66 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/97/977391fc150aed15bee60af375359f495a7f2521"  got  "3e8f6294e42633789008e53f2c7d65cb" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 67 / 686 
+ INFO	Finished  "http://resources.download.minecraft.net/49/49f8946e2a41e2290bd1a73654550b1413b98fb6"  got  "17dfb52d4b1ddfc67bcd2bacee5bf302" 
+ INFO	"Assets for 1.7.10 Mod Pack Lan Party" progress: 68 / 686 

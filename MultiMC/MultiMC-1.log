@@ -1,0 +1,339 @@
+ INFO	MultiMC 5, (c) 2013 MultiMC Contributors 
+ INFO	Version                    :  "0.4.2" 
+ INFO	Git commit                 :  "a59e83cd12bc8e296493cd373968c2a4b866f9d2" 
+ INFO	Work dir before adjustment :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Work dir after adjustment  :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Adjusted by                :  "Command line C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Binary path                :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Application root path      :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	Static data path           :  "C:/Users/Mitchell/Documents/MultiMC" 
+ INFO	New FTB setup 
+ INFO	FTB Launcher paths: "C:/Users/Mitchell/AppData/Local/ftblauncher" and "C:/Users/Mitchell/AppData/Roaming/ftblauncher" 
+ INFO	Your language is "en" 
+ INFO	Instance path              :  "instances" 
+ INFO	Loading Instances... 
+ INFO	Loading MultiMC instance from  "instances/1.7.10 Mod Pack Lan Party" 
+ INFO	Started watching  "C:/Users/Mitchell/Documents/MultiMC/icons" 
+ INFO	Building version from multilayered sources. 
+ INFO	Loading builtin version list. 
+ WARN	Blacklisted legacy version ignored:  "rd-160052" 
+ INFO	Loading local version list. 
+ INFO	Loaded version "1.8" from local version list. 
+ INFO	Loaded version "1.7.10" from local version list. 
+ INFO	Loaded version "1.6.4" from local version list. 
+ERROR	Couldn't open "instances/1.7.10 Mod Pack Lan Party/order.json"  for reading: "No such file or directory" 
+ WARN	Ignoring overriden order 
+ INFO	Reading "net.minecraftforge.json" 
+ INFO	Loaded instance  "1.7.10 Mod Pack Lan Party"  from  "C:/Users/Mitchell/Documents/MultiMC/instances/1.7.10 Mod Pack Lan Party" 
+ INFO	Loading accounts... 
+ERROR	"Failed to read the account list file (accounts.json)." 
+ INFO	Detecting proxy settings... 
+ INFO	Using no proxy is an option! 
+ INFO	"Status JSON"  started. 
+ INFO	Downloading  "http://status.mojang.com/check" 
+ INFO	Reloading news. 
+ INFO	"News RSS Feed"  started. 
+ INFO	Downloading  "http://multimc.org/rss.xml" 
+DEBUG	Checking for updates. 
+DEBUG	Channel list isn't loaded yet. Loading channel list and deferring update check. 
+DEBUG	Loading the channel list. 
+ INFO	"Update System Channel List"  started. 
+ INFO	Downloading  "http://files.multimc.org/update/win32/channels.json" 
+ INFO	Didn't find any legacy assets to migrate 
+ INFO	"Checking for notifications"  started. 
+ INFO	Downloading  "http://files.multimc.org/notifications.json" 
+ INFO	"Update System Channel List" progress: 1 / 1 
+ INFO	"Update System Channel List" succeeded. 
+ INFO	Successfully loaded UpdateChecker channel list. 
+DEBUG	Checking for updates. 
+ INFO	"GoUpdate Repository Index"  started. 
+ INFO	Downloading  "http://files.multimc.org/update/win32/stable/index.json" 
+ INFO	"GoUpdate Repository Index" progress: 1 / 1 
+ INFO	"GoUpdate Repository Index" succeeded. 
+DEBUG	Finished downloading repo index. Checking for new versions. 
+DEBUG	Processing repository version list. 
+DEBUG	Found newer version with ID 30 
+ INFO	"Changelog"  started. 
+ INFO	Downloading  "https://raw.githubusercontent.com/MultiMC/MultiMC5/stable/changelog.md" 
+ INFO	"News RSS Feed" progress: 1 / 1 
+ INFO	"News RSS Feed" succeeded. 
+DEBUG	Finished loading RSS feed. 
+DEBUG	Loaded news entry "Version 0.4 out - Jar mods, UI changes, and more!" 
+DEBUG	Loaded news entry "Introducing QuickMods - A better way to install mods" 
+DEBUG	Loaded news entry "Support us on Patreon!" 
+DEBUG	Loaded news entry "Heartbleed Vulnerability Update (fixed!)" 
+DEBUG	Loaded news entry "Announcing MultiMC 6" 
+DEBUG	Loaded news entry "MultiMC 5 - 0.3 update" 
+DEBUG	Loaded news entry "First official MultiMC 5 release!" 
+DEBUG	Loaded news entry "MultiMC Status Update" 
+DEBUG	News loading succeeded. 
+ INFO	"Status JSON" progress: 1 / 1 
+ INFO	"Status JSON" succeeded. 
+DEBUG	Finished loading status JSON. 
+DEBUG	Status loading succeeded. 
+ INFO	"Changelog" progress: 1 / 1 
+ INFO	"Changelog" succeeded. 
+DEBUG	"<html><h1>MultiMC Changelog</h1>
+<h2>0.4.4</h2>
+<ul>
+<li>Other logs larger than 10MB will not load to prevent logs eating the whole available memory</li>
+<li>Translations are now updated independently from MultiMC</li>
+<li>Added new and reworked the old simple icon themes</li>
+<li>LWJGL on OSX should no longer clash with Java 8</li>
+<li>Update to newer Qt version</li>
+<ul>
+<li>Look and feel updated for latest OSX</li>
+</ul>
+<li>Fixed issues caused by Minecraft inheriting the environment variables from MultiMC</li>
+<li>Minecraft log improvements:</li>
+<ul>
+<li>Implemented search and pause</li>
+<li>Automated coloring is updated for log format used by Minecraft 1.7+</li>
+<li>Added settings for the font used in the console, using sensible defaults for the OS</li>
+</ul>
+<li>Removed MultiMC crash handler, it will be replaced by a better one in the future</li>
+</ul>
+<h2>0.4.3</h2>
+<ul>
+<li>Fix for issues with Minecraft version file updates</li>
+<li>Fix for console window related memory leak</li>
+<li>Fix for travis.ci build</li>
+</ul>
+<h2>0.4.2</h2>
+<ul>
+<li>Show a warning in the log if a library is missing</li>
+<li>Fixes for relocating instances to other MultiMC installs:</li>
+<ul>
+<li>Libraries now use full Gradle dependency specifiers</li>
+<li>Rework of forge installer (forge can reinstall itself using only the information already in the instance)</li>
+<li>Fixed bugs in rarely used library insertion rules</li>
+</ul>
+<li>Make the global settings dialog into a page dialog</li>
+<li>Check if the Java binary can be found before launch</li>
+<li>Show a warning for paths containing a '!' (Java can't handle that properly)</li>
+<li>Many smaller fixes</li>
+</ul>
+<h2>0.4.1</h2>
+<ul>
+<li>Fix LWJGL version list (SourceForge has changed the download API)</li>
+</ul>
+<h2>0.4.0</h2>
+<ul>
+<li>Jar support in 1.6+</li>
+<li>Deprecated legacy instances</li>
+<ul>
+<li>Legacy instances can still be used but not created</li>
+<li>All Minecraft versions are supported in the new instance format</li>
+</ul>
+<li>All instance editing and settings dialogs were turned into pages</li>
+<ul>
+<li>The edit instance dialog contains pages relevant to editing and settings</li>
+<li>The console window contains pages useful when playing the game</li>
+</ul>
+<li>Redone the screenshot management and upload (page)</li>
+<li>Added a way to display and manage log files and crash reports generated by Minecraft (page)</li>
+<li>Added measures to prevent corruption of version files</li>
+<ul>
+<li>Minecraft version files are no longer part of the instances by default</li>
+</ul>
+<li>Added help for the newly added dialog pages</li>
+<li>Made logs uploaded to paste.ee expire after a month</li>
+<li>Fixed a few bugs related to liteloader and forge (1.7.10 issues)</li>
+<li>Icon themes. Two new themes where added (work in progress)</li>
+<li>Changelog and update channel are now visible in the update dialog</li>
+<li>Several performance improvements to the group view</li>
+<li>Added keyboard navigation to the group view</li>
+</ul>
+<h2>0.3.9</h2>
+<ul>
+<li>Workaround for 1.7.10 Forge</li>
+</ul>
+<h2>0.3.8</h2>
+<ul>
+<li>Workaround for performance issues with Intel integrated graphics chips</li>
+</ul>
+<h2>0.3.7</h2>
+<ul>
+<li>Fixed forge for 1.7.10-pre4 (and any future prereleases)</li>
+</ul>
+<h2>0.3.6</h2>
+<ul>
+<li>New server status - now with more color</li>
+<li>Fix for FTB tracking issues</li>
+<li>Fix for translations on OSX not working</li>
+<li>Screenshot dialog should be harder to lose track of when used from the console window</li>
+<li>A crash handler implementation has been added.</li>
+</ul>
+<h2>0.3.5</h2>
+<ul>
+<li>More versions are now selectable when changing instance versions</li>
+<li>Fix for Forge/FML changing its mcmod.info metadata format</li>
+</ul>
+<h2>0.3.4</h2>
+<ul>
+<li>Show a list of Patreon patrons in credits section of the about dialog</li>
+<li>Make the console window raise itself after minecraft closes</li>
+<li>Add Control/Command+q shortcut to quit from the main window</li>
+<li>Add french translation</li>
+<li>Download and cache FML libs for legacy versions</li>
+<li>Update the OS X icon</li>
+<li>Fix FTB libraries not being used properly</li>
+</ul>
+<h2>0.3.3</h2>
+<ul>
+<li>Tweak context menu to prevent accidental clicks</li>
+<li>Fix adding icons to custom icon directories</li>
+<li>Added a Patreon button to the toolbar</li>
+<li>Minecraft authentication tasks now provide better error reports</li>
+</ul>
+<h2>0.3.2</h2>
+<ul>
+<li>Fix issues with libraries not getting replaced properly (fixes instance startup for new instances)</li>
+<li>Fix april fools</li>
+</ul>
+<h2>0.3.1</h2>
+<ul>
+<li>Fix copying of FTB instances (instance type is changed properly now)</li>
+<li>Customizing FTB pack versions will remove the FTB pack patch file</li>
+</ul>
+<h2>0.3</h2>
+<ul>
+<li>Improved instance view</li>
+<li>Overhauled 1.6+ version loading</li>
+<li>Added a patch system for instance modification</li>
+<ul>
+<li>There is no longer a single custom.json file that overrides version.json</li>
+<li>Instead there are now "patch" files in <instance>/patches/, one for each main tweaker (forge, liteloader etc.)</li>
+<li>These patches are applied after version.json in a customisable order,</li>
+<li>A list of these files is shown in the left most tab in the Edit Mods dialog, where a list of libraries was shown before.</li>
+<li>custom.json can still be used for overriding everything.</li>
+</ul>
+<li>Offline mode can be used even when online</li>
+<li>Show an "empty" message in version selector dialogs</li>
+<li>Fix FTB paths on windows</li>
+<li>Tooling support</li>
+<ul>
+<li>JProfiler</li>
+<li>JVisualVM</li>
+<li>MCEdit</li>
+</ul>
+<li>Don't assume forge in FTB instances and allow other libraries (liteloader, mcpatcher, etc.) in FTB instances</li>
+<li>Screenshot uploading/managing</li>
+<li>Instance badges</li>
+<li>Some pre/post command stuff (remove the timeout, variable substitution)</li>
+<li>Fix logging when the system language is not en_US</li>
+<li>Setting PermGen to 64 will now omit the java parameter because it is the default</li>
+<li>Fix encoding of escape sequences (tabs and newlines) in config files</li>
+</ul>
+<h2>0.2.1</h2>
+<ul>
+<li>Hotfix - move the native library extraction into the onesix launcher part.</li>
+</ul>
+<h2>0.2</h2>
+<ul>
+<li>Java memory settings have MB added to the number to make the units obvious.</li>
+<li>Complete rework of the launcher part. No more sensitive information in the process arguments.</li>
+<li>Cached downloads now do not destroy files on failure.</li>
+<li>Mojang service status is now on the MultiMC status bar.</li>
+<li>Java checker is no longer needed/used on instance launch.</li>
+<li>Support for private FTB packs.</li>
+<li>Fixed instance ID issues related to copying FTB packs without changing the instance name.</li>
+<li>Forge versions are better sorted (build numbers above 999 were sorted wrong).</li>
+<li>Fixed crash related to the MultiMC update channel picker in offline mode.</li>
+<li>Started using icon themes for the application icons, fixing many OSX graphical glitches.</li>
+<li>Icon sources have been located, along with icon licenses.</li>
+<li>Update to the German translation.</li>
+</ul>
+<h2>0.1.1</h2>
+<ul>
+<li>Hotfix - Changed the issue tracker URL to <a href="https://github.com/MultiMC/MultiMC5/issues">GitHub issues</a>.</li>
+</ul>
+<h2>0.1</h2>
+<ul>
+<li>Reworked the version numbering system to support our <a href="http://nvie.com/posts/a-successful-git-branching-model/">new Git workflow</a>.</li>
+<li>Added a tray icon for the console window.</li>
+<li>Fixed instances getting deselected after FTB instances are loaded (or whenever the model is reset).</li>
+<li>Implemented proxy settings.</li>
+<li>Fixed sorting of Java installations in the Java list.</li>
+<li>Jar files are now distributed separately, rather than being extracted from the binary at runtime.</li>
+<li>Added additional information to the about dialog.</li>
+</ul>
+<h2>0.0</h2>
+<ul>
+<li>Initial release.</li>
+</ul>
+</html>
+" 
+ INFO	Loading remote version list. 
+ INFO	Loaded version "1.8.1-pre5" from remote version list. 
+ INFO	Loaded version "1.8.1-pre4" from remote version list. 
+ INFO	Loaded version "1.8.1-pre3" from remote version list. 
+ INFO	Loaded version "1.8.1-pre2" from remote version list. 
+ INFO	Loaded version "1.8.1-pre1" from remote version list. 
+ INFO	Loaded version "1.8" from remote version list. 
+ INFO	Loaded version "14w34d" from remote version list. 
+ INFO	Loaded version "14w33c" from remote version list. 
+ INFO	Loaded version "14w32d" from remote version list. 
+ INFO	Loaded version "14w31a" from remote version list. 
+ INFO	Loaded version "14w30c" from remote version list. 
+ INFO	Loaded version "14w29b" from remote version list. 
+ INFO	Loaded version "14w28b" from remote version list. 
+ INFO	Loaded version "14w27b" from remote version list. 
+ INFO	Loaded version "14w26c" from remote version list. 
+ INFO	Loaded version "1.7.10" from remote version list. 
+ INFO	Loaded version "14w25b" from remote version list. 
+ INFO	Loaded version "1.7.10-pre4" from remote version list. 
+ INFO	Loaded version "1.7.10-pre3" from remote version list. 
+ INFO	Loaded version "1.7.10-pre2" from remote version list. 
+ INFO	Loaded version "1.7.10-pre1" from remote version list. 
+ INFO	Loaded version "14w21b" from remote version list. 
+ INFO	Loaded version "14w20b" from remote version list. 
+ INFO	Loaded version "14w19a" from remote version list. 
+ INFO	Loaded version "14w18b" from remote version list. 
+ INFO	Loaded version "14w17a" from remote version list. 
+ INFO	Loaded version "14w11b" from remote version list. 
+ INFO	Loaded version "1.7.9" from remote version list. 
+ INFO	Loaded version "14w10c" from remote version list. 
+ INFO	Loaded version "14w08a" from remote version list. 
+ INFO	Loaded version "1.7.5" from remote version list. 
+ INFO	Loaded version "14w07a" from remote version list. 
+ INFO	Loaded version "14w06b" from remote version list. 
+ INFO	Loaded version "14w05b" from remote version list. 
+ INFO	Loaded version "14w04b" from remote version list. 
+ INFO	Loaded version "14w03b" from remote version list. 
+ INFO	Loaded version "14w02c" from remote version list. 
+ INFO	Loaded version "1.7.4" from remote version list. 
+ INFO	Loaded version "1.7.3" from remote version list. 
+ INFO	Loaded version "1.7.2" from remote version list. 
+ INFO	Loaded version "1.7.1" from remote version list. 
+ INFO	Loaded version "1.7" from remote version list. 
+ INFO	Loaded version "1.6.4" from remote version list. 
+ INFO	Loaded version "1.6.2" from remote version list. 
+ INFO	Loaded version "1.6.1" from remote version list. 
+ INFO	Loaded version "1.6" from remote version list. 
+ WARN	Blacklisted legacy version ignored:  "rd-160052" 
+ INFO	Task succeeded 
+ INFO	Update will be installed later. 
+ INFO	Discovered LWGL version "2.9.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip/download" 
+ INFO	Discovered LWGL version "2.9.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.0/lwjgl-2.9.0.zip/download" 
+ INFO	Discovered LWGL version "2.8.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.5/lwjgl-2.8.5.zip/download" 
+ INFO	Discovered LWGL version "2.8.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.4/lwjgl-2.8.4.zip/download" 
+ INFO	Discovered LWGL version "2.8.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.3/lwjgl-2.8.3.zip/download" 
+ INFO	Discovered LWGL version "2.8.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.2/lwjgl-2.8.2.zip/download" 
+ INFO	Discovered LWGL version "2.8.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.1/lwjgl-2.8.1.zip/download" 
+ INFO	Discovered LWGL version "2.8.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.8.0/lwjgl-2.8.0.zip/download" 
+ INFO	Discovered LWGL version "2.7.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7.1/lwjgl-2.7.1.zip/download" 
+ INFO	Discovered LWGL version "2.7" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.7/lwjgl-2.7.zip/download" 
+ INFO	Discovered LWGL version "2.6" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.6/lwjgl-2.6.zip/download" 
+ INFO	Discovered LWGL version "2.5" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.5/lwjgl-2.5.zip/download" 
+ INFO	Discovered LWGL version "2.4.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.2/lwjgl-2.4.2.zip/download" 
+ INFO	Discovered LWGL version "2.4.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4.1/lwjgl-2.4.1.zip/download" 
+ INFO	Discovered LWGL version "2.4" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.4/lwjgl-2.4.zip/download" 
+ INFO	Discovered LWGL version "2.3" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.3/lwjgl-2.3.zip/download" 
+ INFO	Discovered LWGL version "2.2.2" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.2/lwjgl-2.2.2.zip/download" 
+ INFO	Discovered LWGL version "2.2.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.1/lwjgl-2.2.1.zip/download" 
+ INFO	Discovered LWGL version "2.2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.2.0/lwjgl-2.2.0.zip/download" 
+ INFO	Discovered LWGL version "2.1.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.1.0/lwjgl-2.1.0.zip/download" 
+ INFO	Discovered LWGL version "2.0.1" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0.1/lwjgl-2.0.1.zip/download" 
+ INFO	Discovered LWGL version "2.0" at "http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.0/lwjgl-2.0.zip/download" 
+ INFO	Loaded LWJGL list. 
