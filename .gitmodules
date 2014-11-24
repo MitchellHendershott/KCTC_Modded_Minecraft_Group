@@ -1,0 +1,4 @@
+[submodule "MultiMC/instances/MinecraftModdedRepo"]
+	path = MultiMC/instances/MinecraftModdedRepo
+	url = https://github.com/MitchellHendershott/MinecraftModdedRepo.git
+	branch = master
